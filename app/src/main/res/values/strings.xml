@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ProjLolPam</string>
+    <string name="background_login">Background Login</string>
 </resources>
