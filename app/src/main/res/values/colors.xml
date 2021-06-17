@@ -13,7 +13,7 @@
     <color name="marrom_tit_borda">#866840</color>
     <color name="preto_cabecalho">#14181D</color>
     <color name="branco_textcabecalho">#F9F9F9</color>
-    <color name="branco_fundo_input">#EDETED</color>
+    <color name="branco_fundo_input">#EDEDED</color>
     <color name="azul_destaques">#0BC4C2</color>
     <color name="preto_texto">#525252</color>
 </resources>

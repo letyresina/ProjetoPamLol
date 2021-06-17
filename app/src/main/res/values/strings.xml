@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ProjLolPam</string>
     <string name="background_login">Background Login</string>
+    <string name="logo">Logo</string>
+    <string name="league_of_legends">LEAGUE OF LEGENDS</string>
+    <string name="nickname">NICKNAME</string>
+    <string name="inserir_nickname">Inserir Nickname</string>
+    <string name="entrar">Entrar</string>
 </resources>
