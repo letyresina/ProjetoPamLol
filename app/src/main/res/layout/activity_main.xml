@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imgLogo"
             android:layout_width="38dp"
             android:layout_height="38dp"
             android:layout_marginStart="32dp"
@@ -42,7 +42,7 @@
             app:srcCompat="@drawable/applogo" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textTitulo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
@@ -73,7 +73,7 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/nickname"
+        android:id="@+id/editNickname"
         android:layout_width="210dp"
         tools:ignore="LabelFor"
         android:autofillHints=""
@@ -82,7 +82,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/preto_texto"
-        android:textColorHighlight="preto"
+        android:textColorHighlight="@color/preto_texto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.497"
@@ -91,7 +91,7 @@
         app:layout_constraintVertical_bias="0.729" />
 
     <TextView
-        android:id="@+id/nickText"
+        android:id="@+id/textNickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -101,26 +101,28 @@
         android:textColor="@color/branco_textcabecalho"
         android:textSize="22sp"
         android:typeface="normal"
-        app:layout_constraintBottom_toTopOf="@+id/nickname"
-        app:layout_constraintEnd_toEndOf="@+id/nickname"
+        app:layout_constraintBottom_toTopOf="@+id/editNickname"
+        app:layout_constraintEnd_toEndOf="@+id/editNickname"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/nickname"
+        app:layout_constraintStart_toStartOf="@+id/editNickname"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/botaoEntrar"
+        android:id="@+id/btnEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/botao"
         android:text="@string/entrar"
         android:textColor="@color/marrom_textobtn"
-        app:backgroundTint=""
+        app:backgroundTint="@color/marrom_btn"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/nickname"
-        app:layout_constraintStart_toStartOf="@+id/nickname"
-        app:layout_constraintTop_toBottomOf="@+id/nickname"
-        app:layout_constraintVertical_bias="0.129" />
+        app:layout_constraintEnd_toEndOf="@+id/editNickname"
+        app:layout_constraintStart_toStartOf="@+id/editNickname"
+        app:layout_constraintTop_toBottomOf="@+id/editNickname"
+        app:layout_constraintVertical_bias="0.129"
+
+        android:onClick="abrirHomeActivity" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
