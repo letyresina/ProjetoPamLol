@@ -24,7 +24,7 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_centerInParent="true"
         android:background="@color/preto_cabecalho"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,7 @@
             android:layout_width="38dp"
             android:layout_height="38dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:contentDescription="@string/logo"
             app:srcCompat="@drawable/applogo" />
 
@@ -46,24 +46,24 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="26dp"
             android:layout_weight="1"
             android:fontFamily="@font/alegreya_sans_sc"
-            android:letterSpacing=".17"
+            android:letterSpacing=".15"
             android:text="@string/league_of_legends"
             android:textColor="@color/branco_textcabecalho"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:typeface="normal" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_centerInParent="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
         android:background="@drawable/cabecalho"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -78,6 +78,7 @@
         tools:ignore="LabelFor"
         android:autofillHints=""
         android:layout_height="39dp"
+        android:textSize="16sp"
         android:background="@drawable/inputs"
         android:ems="10"
         android:inputType="textPersonName"
@@ -88,7 +89,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.729" />
+        app:layout_constraintVertical_bias="0.729"
+        android:paddingLeft="8dp" />
 
     <TextView
         android:id="@+id/textNickname"
@@ -99,7 +101,7 @@
         android:letterSpacing=".17"
         android:text="@string/nickname"
         android:textColor="@color/branco_textcabecalho"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/editNickname"
         app:layout_constraintEnd_toEndOf="@+id/editNickname"

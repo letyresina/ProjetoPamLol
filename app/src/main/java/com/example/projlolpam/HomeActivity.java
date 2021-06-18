@@ -18,7 +18,7 @@ public class HomeActivity extends AppCompatActivity {
 
         // Cria um elemento text view
         TextView textView = new TextView(this);
-        textView.setTextSize(40);
+        textView.setTextSize(24);
         textView.setText(message);
 
         // define o text view com layout ativo
