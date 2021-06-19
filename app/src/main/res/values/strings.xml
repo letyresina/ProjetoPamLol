@@ -6,4 +6,9 @@
     <string name="nickname">NICKNAME</string>
     <string name="inserir_nickname">Inserir Nickname</string>
     <string name="entrar">Entrar</string>
+    <string name="background_home">Background Home</string>
+    <string name="como_usar">COMO USAR</string>
+    <string name="lorem_ipsun">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum.
+        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum.</br>
+        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum</br></string>
 </resources>
