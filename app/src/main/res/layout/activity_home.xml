@@ -7,7 +7,7 @@
     tools:context=".HomeActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/background_home"
@@ -20,6 +20,7 @@
         app:srcCompat="@drawable/imagemprojeto2" />
 
     <LinearLayout
+        android:id="@+id/linearCabecalho"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_centerInParent="true"
@@ -27,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2">
+        app:layout_constraintTop_toTopOf="@+id/imgBackground">
 
         <ImageView
             android:id="@+id/imgLogo"
@@ -38,64 +39,86 @@
             android:contentDescription="@string/logo"
             app:srcCompat="@drawable/applogo" />
 
-        <TextView
-            android:id="@+id/textTitulo"
+        <ImageButton
+            android:id="@+id/imgbtnHome"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="26dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:fontFamily="@font/alegreya_sans_sc"
-            android:letterSpacing=".15"
-            android:text="@string/league_of_legends"
-            android:textColor="@color/branco_textcabecalho"
-            android:textSize="20sp"
-            android:typeface="normal" />
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/imghome" />
 
-    </LinearLayout>
+        <ImageButton
+            android:id="@+id/imgbtnCampeoes"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/imgcampeoes" />
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="6dp"
-        android:background="@drawable/cabecalho"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2">
+        <ImageButton
+            android:id="@+id/imgbtnItens2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/imgitens" />
 
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="350dp"
+        android:id="@+id/relativeBorda1"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/cabecalho"
+        app:layout_constraintEnd_toEndOf="@+id/linearCabecalho"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearCabecalho"
+        app:layout_constraintTop_toTopOf="@+id/linearCabecalho">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearContainer"
+        android:layout_width="0dp"
         android:layout_height="500dp"
         android:layout_centerInParent="true"
         android:background="@color/branco_container"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        android:orientation="horizontal"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.583"
-        android:orientation="horizontal">
+        app:layout_constraintTop_toBottomOf="@+id/relativeBorda1">
 
 
         <TextView
-            android:id="@+id/textTitSobre"
+            android:id="@+id/textTituloSobre"
             android:layout_width="349dp"
-            android:layout_height="31dp"
+            android:layout_height="26dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginStart="0dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="0dp"
-            android:layout_marginBottom="449dp"
+            android:layout_marginBottom="0dp"
             android:fontFamily="@font/alegreya_sans_sc"
             android:letterSpacing=".15"
             android:text="@string/como_usar"
@@ -105,40 +128,94 @@
             android:typeface="normal" />
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="337dp"
-            android:layout_height="355dp"
+            android:id="@+id/textSobre"
+            android:layout_width="320dp"
+            android:layout_height="440dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="21dp"
-            android:layout_marginTop="52dp"
-            android:layout_marginEnd="-8dp"
-            android:layout_marginBottom="93dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/alegreya_sans_sc"
+            android:justificationMode="inter_word"
             android:text="@string/lorem_ipsun"
             android:textColor="@color/preto_texto"
             android:textSize="18sp"
             android:typeface="normal" />
 
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/relativeBorda2"
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/cabecalho"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearContainer"
+        app:layout_constraintTop_toTopOf="@+id/linearContainer">
 
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="500dp"
+        android:id="@+id/linearBotoes"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
         android:layout_centerInParent="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="135dp"
-        android:layout_marginBottom="75dp"
-        android:background="@drawable/cabecalho"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2">
+        app:layout_constraintTop_toBottomOf="@+id/relativeBorda2">
+
+        <ImageButton
+            android:id="@+id/imgbtnPorofessor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/botao"
+            android:contentDescription="@string/botao_porofessor"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/imgporofessor" />
+
+        <ImageButton
+            android:id="@+id/imgbtnEmail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/botao"
+            android:contentDescription="@string/botao_email"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/imgemail" />
+
+        <ImageButton
+            android:id="@+id/imgbtnCompartilhar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/botao"
+            android:contentDescription="@string/botao_whatsapp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/imgwhatsapp" />
 
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

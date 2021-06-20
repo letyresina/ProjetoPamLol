@@ -11,4 +11,7 @@
     <string name="lorem_ipsun">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum.
         <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum.</br>
         <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum</br></string>
+    <string name="botao_porofessor">Botão Porofessor</string>
+    <string name="botao_email">Botão Email</string>
+    <string name="botao_whatsapp">Botão Whatsapp</string>
 </resources>

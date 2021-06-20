@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView">
+        app:layout_constraintTop_toTopOf="@+id/imgBackground">
 
         <ImageView
             android:id="@+id/imgLogo"
@@ -42,7 +42,7 @@
             app:srcCompat="@drawable/applogo" />
 
         <TextView
-            android:id="@+id/textTitulo"
+            android:id="@+id/textTituloCabecalho"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
@@ -68,7 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView">
+        app:layout_constraintTop_toTopOf="@+id/imgBackground">
 
     </LinearLayout>
 
@@ -85,12 +85,13 @@
         android:textColor="@color/preto_texto"
         android:textColorHighlight="@color/preto_texto"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imgBackground"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imgBackground"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.729"
-        android:paddingLeft="8dp" />
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp" />
 
     <TextView
         android:id="@+id/textNickname"
@@ -118,7 +119,7 @@
         android:text="@string/entrar"
         android:textColor="@color/marrom_textobtn"
         app:backgroundTint="@color/marrom_btn"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
         app:layout_constraintEnd_toEndOf="@+id/editNickname"
         app:layout_constraintStart_toStartOf="@+id/editNickname"
         app:layout_constraintTop_toBottomOf="@+id/editNickname"

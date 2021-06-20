@@ -21,7 +21,7 @@ public class HomeActivity extends AppCompatActivity {
         textView.setTextSize(24);
         textView.setText(message);
 
-        // define o text view com layout ativo
-        setContentView(textView);
+        // Define o text view com layout ativo
+        // setContentView(textView);
     }
 }
