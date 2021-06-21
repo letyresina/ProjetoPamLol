@@ -21,16 +21,17 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        /* Para pegar Nickname do Login
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.NICKNAME);
+        String message = intent.getStringExtra(MainActivity.NICKNAME);*/
 
-        // Cria um elemento text view
+        /* Cria um elemento text view
         TextView textView = new TextView(this);
         textView.setTextSize(24);
-        textView.setText(message);
+        textView.setText(message);*/
 
-        // Define o text view com layout ativo
-        // setContentView(textView);
+        /* Define o text view com layout ativo
+        setContentView(textView);*/
 
 
     }
@@ -45,9 +46,9 @@ public class HomeActivity extends AppCompatActivity {
     public void enviarEmail(View view) throws UnsupportedEncodingException {
         String uriText =
                 "mailto:leagueoflegends@support.lol" +
-                        "?subject=" + URLEncoder.encode("Ticket - ", "utf-8") +
-                        "&body=" + URLEncoder.encode("Fale aqui com o nosso suporte! Mande-nos" +
-                                                        "recomendações e reporte falhas", "utf-8");
+                        "?subject=" + URLEncoder.encode("Ticket", "utf-8") +
+                        "&body=" + URLEncoder.encode("Fale%20aqui%20com%20o%20nosso%20suporte!" +
+                        "%20Mande-nos%20recomendações%20e%20reporte%20falhas", "utf-8");
         Uri uri = Uri.parse(uriText);
         Intent it = new Intent(Intent.ACTION_SENDTO);
         it.setData(uri);
@@ -57,12 +58,22 @@ public class HomeActivity extends AppCompatActivity {
     public void enviarWhatsapp(View view){
         Intent it = new Intent(Intent.ACTION_SEND);
         it.putExtra(Intent.EXTRA_TEXT, "Olá Invocador. Você já conhece esse aplicativo " +
-                                               "para te auxiliar a subir de ELO? Confira já! " +
-                                               "https://play.google.com/store/apps/leagueoflegends");
+                "para te auxiliar a subir de ELO? Confira já! " +
+                "https://play.google.com/store/apps/leagueoflegends");
         it.setType("text/plain");
         it.setPackage("com.whatsapp");
         if (it.resolveActivity(getPackageManager()) != null) {
             startActivity(it);
         }
+    }
+
+    public void abrirCampeoesActivity(View view) {
+        Intent intent = new Intent(this, CampeoesActivity.class);
+        startActivity(intent);
+    }
+
+    public void abrirItensActivity(View view) {
+        Intent intent = new Intent(this, ItensActivity.class);
+        startActivity(intent);
     }
 }

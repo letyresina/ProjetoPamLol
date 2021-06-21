@@ -63,10 +63,12 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/botao_campeoes"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/imgcampeoes" />
+            app:srcCompat="@drawable/imgcampeoes"
+
+            android:onClick="abrirCampeoesActivity" />
 
         <ImageButton
-            android:id="@+id/imgbtnItens2"
+            android:id="@+id/imgbtnItens"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_marginStart="10dp"
@@ -76,7 +78,9 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/botao_itens"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/imgitens" />
+            app:srcCompat="@drawable/imgitens"
+
+            android:onClick="abrirItensActivity" />
 
     </LinearLayout>
 

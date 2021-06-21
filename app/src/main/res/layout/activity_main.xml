@@ -118,12 +118,11 @@
         android:background="@drawable/botao"
         android:text="@string/entrar"
         android:textColor="@color/marrom_textobtn"
+        android:layout_marginTop="14dp"
         app:backgroundTint="@color/marrom_btn"
-        app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
         app:layout_constraintEnd_toEndOf="@+id/editNickname"
         app:layout_constraintStart_toStartOf="@+id/editNickname"
         app:layout_constraintTop_toBottomOf="@+id/editNickname"
-        app:layout_constraintVertical_bias="0.129"
 
         android:onClick="abrirHomeActivity" />
 
