@@ -14,4 +14,7 @@
     <string name="botao_porofessor">Botão Porofessor</string>
     <string name="botao_email">Botão Email</string>
     <string name="botao_whatsapp">Botão Whatsapp</string>
+    <string name="botao_home">Botão Home</string>
+    <string name="botao_campeoes">Botão Campeões</string>
+    <string name="botao_itens">Botão Icones</string>
 </resources>

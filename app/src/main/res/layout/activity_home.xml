@@ -43,11 +43,12 @@
             android:id="@+id/imgbtnHome"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
+            android:contentDescription="@string/botao_home"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/imghome" />
 
@@ -55,11 +56,12 @@
             android:id="@+id/imgbtnCampeoes"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
+            android:contentDescription="@string/botao_campeoes"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/imgcampeoes" />
 
@@ -67,11 +69,12 @@
             android:id="@+id/imgbtnItens2"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="50dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
+            android:contentDescription="@string/botao_itens"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/imgitens" />
 
@@ -189,7 +192,9 @@
             android:background="@drawable/botao"
             android:contentDescription="@string/botao_porofessor"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/imgporofessor" />
+            app:srcCompat="@drawable/imgporofessor"
+
+            android:onClick="abrirPorofessor" />
 
         <ImageButton
             android:id="@+id/imgbtnEmail"
@@ -201,7 +206,9 @@
             android:background="@drawable/botao"
             android:contentDescription="@string/botao_email"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/imgemail" />
+            app:srcCompat="@drawable/imgemail"
+
+            android:onClick="enviarEmail" />
 
         <ImageButton
             android:id="@+id/imgbtnCompartilhar"
@@ -213,7 +220,9 @@
             android:background="@drawable/botao"
             android:contentDescription="@string/botao_whatsapp"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/imgwhatsapp" />
+            app:srcCompat="@drawable/imgwhatsapp"
+
+            android:onClick="enviarWhatsapp" />
 
     </LinearLayout>
 
