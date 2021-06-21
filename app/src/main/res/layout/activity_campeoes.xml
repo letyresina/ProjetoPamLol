@@ -38,7 +38,7 @@
             android:layout_marginTop="20dp"
             android:contentDescription="@string/logo"
             app:srcCompat="@drawable/applogo" />
-    
+
         <ImageButton
             android:id="@+id/imgbtnHome"
             android:layout_width="0dp"
