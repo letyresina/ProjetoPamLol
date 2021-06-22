@@ -146,7 +146,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/espadadoreidestruido" />
+                        app:srcCompat="@drawable/imgaeropropulsoraprimorado" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -157,7 +157,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgampulhetadezonya" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -166,7 +166,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgcajadoaquafluxo" />
 
                 </TableRow>
 
@@ -182,7 +182,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgcapuzdamortederabadon" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -193,7 +193,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgcriafendas" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -202,7 +202,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgcronometro" />
 
                 </TableRow>
 
@@ -218,7 +218,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgdentedenashor" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -229,7 +229,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgespadadoreidestruido" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -238,7 +238,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgfuracaoderunaan" />
 
                 </TableRow>
 
@@ -254,7 +254,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imggrevasdoberserker" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -265,7 +265,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imggumedoinfinito" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -274,7 +274,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imghinobelicodeshurelya" />
 
                 </TableRow>
 
@@ -290,7 +290,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgimpetocosmico" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -301,7 +301,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgladraodealmasdemejai" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -310,7 +310,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imglamentodeliandry" />
 
                 </TableRow>
 
@@ -326,7 +326,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imglaminadafuriadeguinsoo" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -337,7 +337,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imglembretemortal" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -346,7 +346,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgmorellonomicon" />
 
                 </TableRow>
 
@@ -362,7 +362,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgsapatosdofeiticeiro" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -373,7 +373,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgsedentaporsangue" />
 
                     <ImageButton
                         android:layout_weight="1"
@@ -382,7 +382,7 @@
                         android:background="@android:color/background_dark"
                         android:contentDescription="@string/botao_campeoes"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgitens" />
+                        app:srcCompat="@drawable/imgsufocamentogelido" />
 
                 </TableRow>
 

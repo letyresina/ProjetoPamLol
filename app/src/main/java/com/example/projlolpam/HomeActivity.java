@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity {
     }
     public void abrirPorofessor(View view)
     {
-        Uri uri = Uri.parse("https://masp.org.br");
+        Uri uri = Uri.parse("https://porofessor.gg/pt/");
         Intent it = new Intent(Intent.ACTION_VIEW,uri);
         startActivity(Intent.createChooser(it, "Selecione um navegador"));
 
