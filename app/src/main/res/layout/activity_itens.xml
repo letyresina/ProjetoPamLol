@@ -50,7 +50,9 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/botao_home"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/imghome" />
+            app:srcCompat="@drawable/imghome"
+
+            android:onClick="abrirHomeActivity" />
 
         <ImageButton
             android:id="@+id/imgbtnCampeoes"
@@ -63,7 +65,9 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/botao_campeoes"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/imgcampeoes" />
+            app:srcCompat="@drawable/imgcampeoes"
+
+            android:onClick="abrirCampeoesActivity" />
 
         <ImageButton
             android:id="@+id/imgbtnItens"
