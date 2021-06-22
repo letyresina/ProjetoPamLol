@@ -7,10 +7,11 @@
     <string name="inserir_nickname">Inserir Nickname</string>
     <string name="entrar">Entrar</string>
     <string name="background_home">Background Home</string>
-    <string name="como_usar">COMO USAR</string>
-    <string name="lorem_ipsun">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum.
-        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum.</br>
-        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum</br></string>
+    <string name="como_usar_titulo">COMO USAR</string>
+    <string name="como_usar_texto">Olá, invocador! Após baixar esse aplicativo, é de extrema importância que você saiba a utilidade e como utiliza-lo.
+        <br/>Criamos esse aplicativo com a intenção de auxiliar você com os seus campeões favoritos, suas builds e compreender cada item e sua utilidade.
+        <br/>Clicando em campeões, você será direcionado para a página com todos os ícones e poderá clicar, com uma página que falará brevemente sobre ele, builds e runas com maior taxa de vitória. Na página de itens, você encontrará o que ele faz, o tipo e também os campeões que usam. Dentro de cada uma delas, ao clicar sobre o ícone do campeão ou item, será direcionado para a página também.
+        <br/>Abaixo, você poderá acessar ao site do Porofessor, enviar um ticket por e-mail e o compartilhar o aplicativo através do WhatsApp com seusa amigos! Não esqueça de acessar nosso site, invocador!</string>
     <string name="botao_porofessor">Botão Porofessor</string>
     <string name="botao_email">Botão Email</string>
     <string name="botao_whatsapp">Botão Whatsapp</string>

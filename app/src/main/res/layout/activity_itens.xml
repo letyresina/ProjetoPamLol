@@ -101,7 +101,7 @@
     </RelativeLayout>
 
 
-    <RelativeLayout
+    <ScrollView
         android:id="@+id/linearContainer"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -115,282 +115,272 @@
         app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeBorda1">
+        app:layout_constraintTop_toBottomOf="@+id/relativeBorda1"
+        android:scrollbars="vertical">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:scrollbars="vertical" >
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp">
 
-            <TableLayout
-                android:layout_width="fill_parent"
+            <TableRow
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:isScrollContainer="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="10dp">
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
 
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgaeropropulsoraprimorado" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgaeropropulsoraprimorado" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgampulhetadezonya" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgampulhetadezonya" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgcajadoaquafluxo" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgcajadoaquafluxo" />
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
 
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgcapuzdamortederabadon" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgcapuzdamortederabadon" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgcriafendas" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgcriafendas" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgcronometro" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgcronometro" />
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
 
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgdentedenashor" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgdentedenashor" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgespadadoreidestruido" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgespadadoreidestruido" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgfuracaoderunaan" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgfuracaoderunaan" />
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
 
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imggrevasdoberserker" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imggrevasdoberserker" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imggumedoinfinito" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imggumedoinfinito" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imghinobelicodeshurelya" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imghinobelicodeshurelya" />
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
 
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgimpetocosmico" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgimpetocosmico" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgladraodealmasdemejai" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgladraodealmasdemejai" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imglamentodeliandry" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imglamentodeliandry" />
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
 
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imglaminadafuriadeguinsoo" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imglaminadafuriadeguinsoo" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imglembretemortal" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imglembretemortal" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgmorellonomicon" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgmorellonomicon" />
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
 
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgsapatosdofeiticeiro" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgsapatosdofeiticeiro" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgsedentaporsangue" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgsedentaporsangue" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_height="98dp"
+                    android:layout_width="80dp"
+                    android:background="@android:color/background_dark"
+                    android:contentDescription="@string/botao_campeoes"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgsufocamentogelido" />
 
-                    <ImageButton
-                        android:layout_weight="1"
-                        android:layout_height="98dp"
-                        android:layout_width="80dp"
-                        android:background="@android:color/background_dark"
-                        android:contentDescription="@string/botao_campeoes"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/imgsufocamentogelido" />
+            </TableRow>
 
-                </TableRow>
+        </TableLayout>
 
-            </TableLayout>
-
-        </ScrollView>
-
-    </RelativeLayout>
+    </ScrollView>
 
     <RelativeLayout
         android:id="@+id/relativeBorda2"
