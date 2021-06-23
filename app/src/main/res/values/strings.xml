@@ -24,6 +24,7 @@
     <string name="text_buildgeral">BUILD GERAL</string>
     <string name="text_runageral">RUNA GERAL</string>
     <string name="text_mecanica">MECÂNICA</string>
+    <string name="text_campeoesrecomendados">CAMPEÕES RECOMENDADOS</string>
 
     <!-- ITENS -->
     <string name="item_arcoescudoimortal">Arco-Escudo Imortal</string>
@@ -85,11 +86,11 @@
     <string name="champ_katarina">KATARINA</string>
     <string name="champ_katarina_frase">A LÂMINA SINISTRA</string>
     <string name="champ_katarina_mecanica">
-        Katarina tem uma mecânica conhecida como complexa, nada que com um pouco de treino você não consiga aprender.<br/>
-        Para farmar na lane, o combo clean wave é Q + E + W;<br/>
-        Na lane phase, ou em lutas de 1v1 contra seu inimigo, um combo que você pode utilizar para pegar seu inimigo de surpresa é E + W + Q + E + R e, se necessário, ignite, caso perceba que o inimigo saia vivo;<br/>
-        Em uma TeamFight, busque se posicionar juntamente com seu AdCarry (principalmente se o time inimigo tiver muito cc), espere os colegas de time iniciarem e, ao ver metade da vida retirada, use E + R, Q + E + W no inimigo que está prestes a fugir e, se necessário, use ignite se caso perceber que um há muita chance de fugir;<br/>
-        Alguns monos Katarina preferem usar feitiços como tp e ignite, ou em lanes muito complicadas (como Zed, Lucian e Fizz) exhaust e ignite, utilizando do E (que concede velocidade) para fugir juntamente com seu E. Mas, não lhe impede de utilizar o Flash, caso não tenha tanta segurança assim.<br/>
+        Katarina tem uma mecânica conhecida como complexa, nada que com um pouco de treino você não consiga aprender.<br />
+        Para farmar na lane, o combo clean wave é Q + E + W;<br />
+        Na lane phase, ou em lutas de 1v1 contra seu inimigo, um combo que você pode utilizar para pegar seu inimigo de surpresa é E + W + Q + E + R e, se necessário, ignite, caso perceba que o inimigo saia vivo;<br />
+        Em uma TeamFight, busque se posicionar juntamente com seu AdCarry (principalmente se o time inimigo tiver muito cc), espere os colegas de time iniciarem e, ao ver metade da vida retirada, use E + R, Q + E + W no inimigo que está prestes a fugir e, se necessário, use ignite se caso perceber que um há muita chance de fugir;<br />
+        Alguns monos Katarina preferem usar feitiços como tp e ignite, ou em lanes muito complicadas (como Zed, Lucian e Fizz) exhaust e ignite, utilizando do E (que concede velocidade) para fugir juntamente com seu E. Mas, não lhe impede de utilizar o Flash, caso não tenha tanta segurança assim.<br />
         - By LetyResinaa, mono Katarina
     </string>
 
@@ -105,5 +106,11 @@
     <string name="champ_yasuo">YASUO</string>
     <string name="champ_yone">YONE</string>
     <string name="champ_zed">ZED</string>
+
+    <string name="lorem_ipsun">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum<br/>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum<br/>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum
+    </string>
 
 </resources>
