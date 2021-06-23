@@ -28,15 +28,21 @@
 
     <!-- ITENS -->
     <string name="item_arcoescudoimortal">Arco-Escudo Imortal</string>
+    <string name="item_arcoescudoimortal_sobre">
+        Custando 3400 na loja, o Arco-Escudo Imortal (ou imoral) entrega 55 de dano de ataque, 20% de velocidade de ataque, 20% de chance de acerto crítico e 10% de roubo de vida, sendo essencial para campeões que precisam sobreviver antes de serem letais, tanto contra campeões que causam dano explosivo na lane phase quanto para TeamFights.<br/>
+        Sua passiva (Salva-Vidas) fornece um escudo ao sofrer dano que reduziria sua vida a menos de 30% e 15% de roubo de vida extra.
+    </string>
+
     <string name="item_grevasdoberserker">Grevas do Berserker</string>
     <string name="item_laminadafuriadeguinsoo">Lâmina Furia de Guinsoo</string>
     <string name="item_furacaoderunaan">Furacão de Runaan</string>
     <string name="item_sedentaporsangue">Sedenta por Sangue</string>
     <string name="item_espadadoreidestruido">Espada do Rei Destruido</string>
+
     <string name="item_dentedenashor">Dente de NaShor</string>
     <string name="item_dentedenashor_sobre">
-        Utilizado em campeões de dano mágico, o Dente de NaShor traz diversos benefícios, custando 3000 na loja.<br/>
-        Dentre os benefícios concebidos, são: 100 de Poder de Habilidade Concebido + 50% na velocidade de ataque, muito útil nas TeamFights, pois enquanto suas habilidades estão em couldown, você punirá o inimigo com seus ataques básicos.<br/>
+        Utilizado em campeões de dano mágico, o Dente de NaShor traz diversos benefícios, custando 3000 na loja.<br />
+        Dentre os benefícios concebidos, são: 100 de Poder de Habilidade Concebido + 50% na velocidade de ataque, muito útil nas TeamFights, pois enquanto suas habilidades estão em couldown, você punirá o inimigo com seus ataques básicos.<br />
         Esse dano se dará graças a passiva do item, que é a Mordida Icathiana, que causam de 15 a 20% de dano mágico ao contato acumulado conforme os minutos da passiva passam e abates e assistências.
     </string>
 
@@ -57,7 +63,6 @@
     <string name="item_sufocamentogelido">Sufocamento Gélido</string>
 
 
-
     <!-- RUNAS -->
     <string name="runa_chuvadelaminas">Chuva de Lâminas</string>
     <string name="runa_gostodesangue">Gosto de Sangue</string>
@@ -76,7 +81,6 @@
     <string name="runa_impactorepentino">Conquistador</string>
 
     <!-- CAMPEÕES -->
-
     <string name="champ_akali">AKALI</string>
     <string name="champ_aphelios">APHELIOS</string>
     <string name="champ_camille">CAMILLE</string>
@@ -90,25 +94,25 @@
     <string name="champ_kalista">KALISTA</string>
     <string name="champ_kalista_frase">A LANÇA DA VINGANÇA</string>
     <string name="champ_kalista_mecanica">
-        "Uma Kalista bem jogada faz 1v5"<br/>
+        "Uma Kalista bem jogada faz 1v5"<br />
 
-        Mais que qualquer outro atirador, a Kalista tem um extremo potencial de cait. A cada ataque básico, seu próximo movimento será um dash que tem inúmeras utilidades!<br/>
-        Durante a lane phase no early game use o E para garantir minions quando necessário, fique tranquilo, caso ele mate será resetado e você receberá parte de sua mana de volta! Para pokear com ele, estaque uma lança num minion, estaque nos inimigos e pressione E quando ver que o minion morrerá!<br/>
-        Caso esteja em perseguição ou sendo perseguido, use o na direção do inimigo, ele te dará o dash, que inclusive, é capaz de atravessar algumas paredes, experimente!<br/>
-        Lembre sempre também que você tem o W à sua disposição… ele pode te dar, por exemplo, visão do jungler inimigo, pode salvar sua vida.<br/>
-        Quando seu aliado em juramento estiver prestes a morrer, não exite em salvá-lo com sua ult, isso o deixará inalvejável e capaz de saltar para um local dentro da área de sua habilidade.<br/>
-        Por ultimo e não menos importante: CAITA, CAITA, CAITA!<br/>
+        Mais que qualquer outro atirador, a Kalista tem um extremo potencial de cait. A cada ataque básico, seu próximo movimento será um dash que tem inúmeras utilidades!<br />
+        Durante a lane phase no early game use o E para garantir minions quando necessário, fique tranquilo, caso ele mate será resetado e você receberá parte de sua mana de volta! Para pokear com ele, estaque uma lança num minion, estaque nos inimigos e pressione E quando ver que o minion morrerá!<br />
+        Caso esteja em perseguição ou sendo perseguido, use o na direção do inimigo, ele te dará o dash, que inclusive, é capaz de atravessar algumas paredes, experimente!<br />
+        Lembre sempre também que você tem o W à sua disposição… ele pode te dar, por exemplo, visão do jungler inimigo, pode salvar sua vida.<br />
+        Quando seu aliado em juramento estiver prestes a morrer, não exite em salvá-lo com sua ult, isso o deixará inalvejável e capaz de saltar para um local dentro da área de sua habilidade.<br />
+        Por ultimo e não menos importante: CAITA, CAITA, CAITA!<br />
         - by TaveiraTavel
     </string>
 
     <string name="champ_katarina">KATARINA</string>
     <string name="champ_katarina_frase">A LÂMINA SINISTRA</string>
     <string name="champ_katarina_mecanica">
-        Katarina tem uma mecânica conhecida como complexa, nada que com um pouco de treino você não consiga aprender.<br/>
-        Para farmar na lane, o combo clean wave é Q + E + W;<br/>
-        Na lane phase, ou em lutas de 1v1 contra seu inimigo, um combo que você pode utilizar para pegar seu inimigo de surpresa é E + W + Q + E + R e, se necessário, ignite, caso perceba que o inimigo saia vivo;<br/>
-        Em uma TeamFight, busque se posicionar juntamente com seu AdCarry (principalmente se o time inimigo tiver muito cc), espere os colegas de time iniciarem e, ao ver metade da vida retirada, use E + R, Q + E + W no inimigo que está prestes a fugir e, se necessário, use ignite se caso perceber que um há muita chance de fugir;<br/>
-        Alguns monos Katarina preferem usar feitiços como tp e ignite, ou em lanes muito complicadas (como Zed, Lucian e Fizz) exhaust e ignite, utilizando do E (que concede velocidade) para fugir juntamente com seu E. Mas, não lhe impede de utilizar o Flash, caso não tenha tanta segurança assim.<br/>
+        Katarina tem uma mecânica conhecida como complexa, nada que com um pouco de treino você não consiga aprender.<br />
+        Para farmar na lane, o combo clean wave é Q + E + W;<br />
+        Na lane phase, ou em lutas de 1v1 contra seu inimigo, um combo que você pode utilizar para pegar seu inimigo de surpresa é E + W + Q + E + R e, se necessário, ignite, caso perceba que o inimigo saia vivo;<br />
+        Em uma TeamFight, busque se posicionar juntamente com seu AdCarry (principalmente se o time inimigo tiver muito cc), espere os colegas de time iniciarem e, ao ver metade da vida retirada, use E + R, Q + E + W no inimigo que está prestes a fugir e, se necessário, use ignite se caso perceber que um há muita chance de fugir;<br />
+        Alguns monos Katarina preferem usar feitiços como tp e ignite, ou em lanes muito complicadas (como Zed, Lucian e Fizz) exhaust e ignite, utilizando do E (que concede velocidade) para fugir juntamente com seu E. Mas, não lhe impede de utilizar o Flash, caso não tenha tanta segurança assim.<br />
         - By LetyResinaa, mono Katarina
     </string>
 
@@ -126,8 +130,8 @@
     <string name="champ_zed">ZED</string>
 
     <string name="lorem_ipsun">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum<br/>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum<br/>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum<br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum<br />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum
     </string>
 
