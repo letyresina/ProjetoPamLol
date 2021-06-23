@@ -25,19 +25,31 @@
     <string name="text_runageral">RUNA GERAL</string>
     <string name="text_mecanica">MECÂNICA</string>
 
-    <string name="champ_kalista_titulo">KALISTA</string>
-    <string name="champ_kalista_frase">A LANÇA DA VINGANÇA</string>
-    <string name="champ_kalista_mecanica">
-        Explicar mecânica aqui...
-    </string>
-
+    <!-- ITENS -->
     <string name="item_arcoescudoimortal">Arco-Escudo Imortal</string>
     <string name="item_grevasdoberserker">Grevas do Berserker</string>
     <string name="item_laminadafuriadeguinsoo">Lâmina Furia de Guinsoo</string>
     <string name="item_furacaoderunaan">Furacão de Runaan</string>
     <string name="item_sedentaporsangue">Sedenta por Sangue</string>
     <string name="item_espadadoreidestruido">Espada do Rei Destruido</string>
+    <string name="item_dentedenashor">Dente de NaShor</string>
+    <string name="item_sapatosdofeiticeiro">Sapatos do Feiticeiro</string>
+    <string name="item_ampulhetadezhonya">Ampulheta de Zhonya</string>
+    <string name="item_aeropropulsoraprimorado">Aero Propulsor Aprimorado</string>
+    <string name="item_capuzdamortederabadon">Capuz da Morte de Rabadon</string>
+    <string name="item_ladraodealmasdemejai">Ladrão de Almas de Mejai</string>
+    <string name="item_aquafluxo">Aquafluxo</string>
+    <string name="item_criafendas">Criafendas</string>
+    <string name="item_cronometro">Cronômetro</string>
+    <string name="item_gumedoinfinito">Gume do Infinito</string>
+    <string name="item_hinobelicodeshurelya">Hino Bélico de Shurelya</string>
+    <string name="item_impetocosmico">Ímpeto Cósmico</string>
+    <string name="item_lamentodeliandry">Lamento de Liandry</string>
+    <string name="item_lembretemortal">Lembrete Mortal</string>
+    <string name="item_morellonomicon">Morellonomicon</string>
+    <string name="item_sufocamentogelido">Sufocamento Gélido</string>
 
+    <!-- RUNAS -->
     <string name="runa_chuvadelaminas">Chuva de Lâminas</string>
     <string name="runa_gostodesangue">Gosto de Sangue</string>
     <string name="runa_globosoculares">Globos Oculares</string>
@@ -48,26 +60,45 @@
     <string name="runa_ataque2">Ataque 2</string>
     <string name="runa_flex1">Flex 1</string>
     <string name="runa_defesa2">Defesa 2</string>
-
-    <string name="champ_katarina_titulo">KATARINA</string>
-    <string name="champ_katarina_frase">A LÂMINA SINISTRA</string>
-    <string name="champ_katarina_mecanica">
-        Explicar mecânica aqui...
-    </string>
-
-    <string name="item_dentedenashor">Dente de NaShor</string>
-    <string name="item_sapatosdofeiticeiro">Sapatos do Feiticeiro</string>
-    <string name="item_ampulhetadezhonya">Ampulheta de Zhonya</string>
-    <string name="item_aeropropulsoraprimorado">Aero Propulsor Aprimorado</string>
-    <string name="item_capuzdamortederabadon">Capuz da Morte de Rabadon</string>
-    <string name="item_ladraodealmasdemejai">Ladrão de Almas de Mejai</string>
-
-
     <string name="runa_conquistador">Conquistador</string>
     <string name="runa_lendadetenacidade">Lenda de Tenacidade</string>
     <string name="runa_golpedemisericordia">Golpe de Misericordia</string>
     <string name="runa_dominacao">Dominação</string>
     <string name="runa_impactorepentino">Conquistador</string>
 
+    <!-- CAMPEÕES -->
+
+    <string name="champ_akali">AKALI</string>
+    <string name="champ_aphelios">APHELIOS</string>
+    <string name="champ_camille">CAMILLE</string>
+    <string name="champ_diana">DIANA</string>
+    <string name="champ_gwen">GWEN</string>
+    <string name="champ_irelia">IRELIA</string>
+    <string name="champ_jinx">JINX</string>
+
+    <string name="champ_kalista">KALISTA</string>
+    <string name="champ_kalista_frase">A LANÇA DA VINGANÇA</string>
+    <string name="champ_kalista_mecanica">
+        Explicar mecânica aqui...
+    </string>
+
+    <string name="champ_katarina">KATARINA</string>
+    <string name="champ_katarina_frase">A LÂMINA SINISTRA</string>
+    <string name="champ_katarina_mecanica">
+        Explicar mecânica aqui...
+    </string>
+
+    <string name="champ_kayn">KAYN</string>
+    <string name="champ_leblanc">LEBLANC</string>
+    <string name="champ_morgana">MORGANA</string>
+    <string name="champ_neeko">NEEKO</string>
+    <string name="champ_nidalee">NIDALEE</string>
+    <string name="champ_pyke">PYKE</string>
+    <string name="champ_qiyana">QIYANA</string>
+    <string name="champ_riven">RIVEN</string>
+    <string name="champ_sett">SETT</string>
+    <string name="champ_yasuo">YASUO</string>
+    <string name="champ_yone">YONE</string>
+    <string name="champ_zed">ZED</string>
 
 </resources>

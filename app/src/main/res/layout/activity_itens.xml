@@ -136,7 +136,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_aeropropulsoraprimorado"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgaeropropulsoraprimorado" />
 
@@ -147,7 +147,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_ampulhetadezhonya"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgampulhetadezonya" />
 
@@ -156,7 +156,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_aquafluxo"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgcajadoaquafluxo" />
 
@@ -172,7 +172,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_capuzdamortederabadon"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgcapuzdamortederabadon" />
 
@@ -183,7 +183,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_criafendas"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgcriafendas" />
 
@@ -192,7 +192,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_cronometro"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgcronometro" />
 
@@ -208,7 +208,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_dentedenashor"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgdentedenashor" />
 
@@ -219,7 +219,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_espadadoreidestruido"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgespadadoreidestruido" />
 
@@ -228,7 +228,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_furacaoderunaan"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgfuracaoderunaan" />
 
@@ -244,7 +244,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_grevasdoberserker"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imggrevasdoberserker" />
 
@@ -255,7 +255,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_gumedoinfinito"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imggumedoinfinito" />
 
@@ -264,7 +264,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_hinobelicodeshurelya"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imghinobelicodeshurelya" />
 
@@ -280,7 +280,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_impetocosmico"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgimpetocosmico" />
 
@@ -291,7 +291,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_ladraodealmasdemejai"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgladraodealmasdemejai" />
 
@@ -300,7 +300,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_lamentodeliandry"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imglamentodeliandry" />
 
@@ -316,7 +316,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_laminadafuriadeguinsoo"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imglaminadafuriadeguinsoo" />
 
@@ -327,7 +327,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_lembretemortal"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imglembretemortal" />
 
@@ -336,7 +336,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_morellonomicon"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgmorellonomicon" />
 
@@ -352,7 +352,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_sapatosdofeiticeiro"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgsapatosdofeiticeiro" />
 
@@ -363,7 +363,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_sedentaporsangue"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgsedentaporsangue" />
 
@@ -372,7 +372,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/item_sufocamentogelido"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgsufocamentogelido" />
 

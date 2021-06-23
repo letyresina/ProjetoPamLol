@@ -23,4 +23,9 @@ public class CampeoesActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ItensActivity.class);
         startActivity(intent);
     }
+
+    public void abrirKalistaActivity(View view) {
+        Intent intent = new Intent(this, KalistaActivity.class);
+        startActivity(intent);
+    }
 }

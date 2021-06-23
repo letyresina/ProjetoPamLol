@@ -136,9 +136,9 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_akali"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/akali" />
+                    app:srcCompat="@drawable/imgakali" />
 
                 <ImageButton
                     android:layout_weight="1"
@@ -147,7 +147,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_aphelios"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgaphelios" />
 
@@ -156,7 +156,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_camille"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgcamille" />
 
@@ -172,7 +172,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_diana"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgdiana" />
 
@@ -183,7 +183,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_gwen"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imggwen" />
 
@@ -192,7 +192,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_irelia"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgirelia" />
 
@@ -208,7 +208,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_jinx"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgjinx" />
 
@@ -219,16 +219,18 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_kalista"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/imgkalista" />
+                    app:srcCompat="@drawable/imgkalista"
+
+                    android:onClick="abrirKalistaActivity" />
 
                 <ImageButton
                     android:layout_weight="1"
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_katarina"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgkatarina" />
 
@@ -244,7 +246,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_kayn"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgkayn" />
 
@@ -255,7 +257,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_leblanc"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgleblanc" />
 
@@ -264,7 +266,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_morgana"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgmorgana" />
 
@@ -280,7 +282,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_neeko"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgneeko" />
 
@@ -291,7 +293,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_nidalee"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgnidalee" />
 
@@ -300,7 +302,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_pyke"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgpyke" />
 
@@ -316,7 +318,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_qiyana"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgqiyana" />
 
@@ -327,7 +329,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_riven"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgriven" />
 
@@ -336,7 +338,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_sett"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgsett" />
 
@@ -352,7 +354,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_yasuo"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgyasuo" />
 
@@ -363,7 +365,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_yone"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgyone" />
 
@@ -372,7 +374,7 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/botao_campeoes"
+                    android:contentDescription="@string/champ_zed"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/imgzed" />
 
@@ -381,6 +383,8 @@
         </TableLayout>
 
     </ScrollView>
+
+
 
     <RelativeLayout
         android:id="@+id/relativeBorda2"
@@ -396,8 +400,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/linearContainer"
-        app:layout_constraintTop_toTopOf="@+id/linearContainer">
+        app:layout_constraintStart_toStartOf="@+id/scrollContainer"
+        app:layout_constraintTop_toTopOf="@+id/scrollContainer">
 
     </RelativeLayout>
 

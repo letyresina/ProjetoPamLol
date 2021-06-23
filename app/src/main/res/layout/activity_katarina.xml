@@ -161,7 +161,7 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/alegreya_sans_sc"
                 android:letterSpacing=".15"
-                android:text="@string/champ_katarina_titulo"
+                android:text="@string/champ_katarina"
                 android:textAlignment="center"
                 android:textColor="@color/marrom_tit_borda"
                 android:textSize="24sp"
