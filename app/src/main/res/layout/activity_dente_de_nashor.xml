@@ -178,7 +178,7 @@
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/alegreya_sans_sc"
                 android:justificationMode="inter_word"
-                android:text="@string/lorem_ipsun"
+                android:text="@string/item_dentedenashor_sobre"
                 android:textColor="@color/preto_texto"
                 android:textSize="18sp"
                 android:typeface="normal" />
@@ -236,11 +236,11 @@
 
                     <ImageView
                         android:id="@+id/imageCampeaoRecomendado1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/imgcampeoes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/imgkatarina"
                         android:background="@color/black"
-                        android:contentDescription="@string/item_dentedenashor"
+                        android:contentDescription="@string/champ_katarina"
                         android:scaleType="centerCrop" />
 
                 </androidx.cardview.widget.CardView>
@@ -256,11 +256,11 @@
 
                     <ImageView
                         android:id="@+id/imageCampeaoRecomendado2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/imgcampeoes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/imgdiana"
                         android:background="@color/black"
-                        android:contentDescription="@string/item_dentedenashor"
+                        android:contentDescription="@string/champ_diana"
                         android:scaleType="centerCrop" />
 
                 </androidx.cardview.widget.CardView>
@@ -276,11 +276,11 @@
 
                     <ImageView
                         android:id="@+id/imageCampeaoRecomendado3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/imgcampeoes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/imgtwitch"
                         android:background="@color/black"
-                        android:contentDescription="@string/item_dentedenashor"
+                        android:contentDescription="@string/champ_twitch"
                         android:scaleType="centerCrop" />
 
                 </androidx.cardview.widget.CardView>
@@ -296,11 +296,11 @@
 
                     <ImageView
                         android:id="@+id/imageCampeaoRecomendado4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/imgcampeoes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/imgteemo"
                         android:background="@color/black"
-                        android:contentDescription="@string/item_dentedenashor"
+                        android:contentDescription="@string/champ_teemo"
                         android:scaleType="centerCrop" />
 
                 </androidx.cardview.widget.CardView>
@@ -323,12 +323,12 @@
 
         <ImageView
             android:id="@+id/imageDenteDeNashor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/imgitens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@color/black"
             android:contentDescription="@string/item_dentedenashor"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/imgdentedenashor" />
 
     </androidx.cardview.widget.CardView>
 

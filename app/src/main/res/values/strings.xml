@@ -34,6 +34,12 @@
     <string name="item_sedentaporsangue">Sedenta por Sangue</string>
     <string name="item_espadadoreidestruido">Espada do Rei Destruido</string>
     <string name="item_dentedenashor">Dente de NaShor</string>
+    <string name="item_dentedenashor_sobre">
+        Utilizado em campeões de dano mágico, o Dente de NaShor traz diversos benefícios, custando 3000 na loja.<br/>
+        Dentre os benefícios concebidos, são: 100 de Poder de Habilidade Concebido + 50% na velocidade de ataque, muito útil nas TeamFights, pois enquanto suas habilidades estão em couldown, você punirá o inimigo com seus ataques básicos.<br/>
+        Esse dano se dará graças a passiva do item, que é a Mordida Icathiana, que causam de 15 a 20% de dano mágico ao contato acumulado conforme os minutos da passiva passam e abates e assistências.
+    </string>
+
     <string name="item_sapatosdofeiticeiro">Sapatos do Feiticeiro</string>
     <string name="item_ampulhetadezhonya">Ampulheta de Zhonya</string>
     <string name="item_aeropropulsoraprimorado">Aero Propulsor Aprimorado</string>
@@ -49,6 +55,8 @@
     <string name="item_lembretemortal">Lembrete Mortal</string>
     <string name="item_morellonomicon">Morellonomicon</string>
     <string name="item_sufocamentogelido">Sufocamento Gélido</string>
+
+
 
     <!-- RUNAS -->
     <string name="runa_chuvadelaminas">Chuva de Lâminas</string>
@@ -76,6 +84,8 @@
     <string name="champ_gwen">GWEN</string>
     <string name="champ_irelia">IRELIA</string>
     <string name="champ_jinx">JINX</string>
+    <string name="champ_teemo">TEEMO</string>
+    <string name="champ_twitch">TWITCH</string>
 
     <string name="champ_kalista">KALISTA</string>
     <string name="champ_kalista_frase">A LANÇA DA VINGANÇA</string>
