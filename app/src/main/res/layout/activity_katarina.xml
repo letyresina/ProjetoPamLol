@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KatarinaActivity">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/background_home"
+        android:scaleType="centerCrop"
+        android:scrollX="-240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagemprojeto2" />
+
+    <LinearLayout
+        android:id="@+id/linearCabecalho"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@color/preto_cabecalho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgBackground">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/applogo" />
+
+        <ImageButton
+            android:id="@+id/imgbtnHome"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/botao_home"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/imghome"
+
+            android:onClick="abrirHomeActivity" />
+
+        <ImageButton
+            android:id="@+id/imgbtnCampeoes"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/botao_campeoes"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/imgcampeoes" />
+
+        <ImageButton
+            android:id="@+id/imgbtnItens"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/botao_itens"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/imgitens"
+
+            android:onClick="abrirItensActivity" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeBorda1"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/cabecalho"
+        app:layout_constraintEnd_toEndOf="@+id/linearCabecalho"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearCabecalho"
+        app:layout_constraintTop_toTopOf="@+id/linearCabecalho">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearContainer"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:background="@color/marrom_topocontainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeBorda1">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeBorda2"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bordatopocontainer"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearContainer"
+        app:layout_constraintTop_toTopOf="@+id/linearContainer">
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:background="@color/branco_container"
+        android:orientation="horizontal"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearContainer">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textTituloCampeao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/alegreya_sans_sc"
+                android:letterSpacing=".15"
+                android:text="@string/champ_katarina_titulo"
+                android:textAlignment="center"
+                android:textColor="@color/marrom_tit_borda"
+                android:textSize="24sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/textFraseCampeao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTituloCampeao"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/alegreya_sans_sc"
+                android:letterSpacing=".15"
+                android:text="@string/champ_katarina_frase"
+                android:textAlignment="center"
+                android:textColor="@color/marrom_tit_borda"
+                android:textSize="16sp"
+                android:typeface="normal" />
+
+            <LinearLayout
+                android:id="@+id/linearDivisao1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textFraseCampeao"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/marrom_topocontainer"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/textBuildGeral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearDivisao1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/alegreya_sans_sc"
+                android:letterSpacing=".15"
+                android:text="@string/text_buildgeral"
+                android:textColor="@color/marrom_tit_borda"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <LinearLayout
+                android:id="@+id/linearBuild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textBuildGeral"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="9dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgbtnItem1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/item_dentedenashor"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgdentedenashor" />
+
+                <ImageView
+                    android:id="@+id/imgbtnItem2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/item_sapatosdofeiticeiro"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgsapatosdofeiticeiro" />
+
+                <ImageView
+                    android:id="@+id/imgbtnItem3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/item_ampulhetadezhonya"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgampulhetadezonya" />
+
+                <ImageView
+                    android:id="@+id/imgbtnItem4"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/item_aeropropulsoraprimorado"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgaeropropulsoraprimorado" />
+
+                <ImageView
+                    android:id="@+id/imgbtnItem5"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/item_capuzdamortederabadon"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgcapuzdamortederabadon" />
+
+                <ImageView
+                    android:id="@+id/imgbtnItem6"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/item_ladraodealmasdemejai"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgladraodealmasdemejai" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearDivisao2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/linearBuild"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/marrom_topocontainer"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/textRunaGeral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearDivisao2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/alegreya_sans_sc"
+                android:letterSpacing=".15"
+                android:text="@string/text_runageral"
+                android:textColor="@color/marrom_tit_borda"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <LinearLayout
+                android:id="@+id/linearRunaPrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRunaGeral"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgbtnRunaPrincipal1"
+                    android:layout_width="20dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/runa_conquistador"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgconquistador" />
+
+                <ImageView
+                    android:id="@+id/imgbtnRunaPrincipal2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/runa_triunfo"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgtriunfo" />
+
+                <ImageView
+                    android:id="@+id/imgbtnRunaPrincipal3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/runa_lendadetenacidade"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imglendadetenacidade" />
+
+                <ImageView
+                    android:id="@+id/imgbtnRunaPrincipal4"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/runa_golpedemisericordia"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imggolpedemisericordia" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRunaSecundaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearRunaPrincipal"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgbtnRunaSecundaria1"
+                    android:layout_width="20dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/runa_dominacao"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgdominacao" />
+
+                <ImageView
+                    android:id="@+id/imgbtnRunaSecundaria2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/runa_impactorepentino"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgimpactorepentino" />
+
+                <ImageView
+                    android:id="@+id/imgbtnRunaSecundaria3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/runa_globosoculares"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgglobosoculares" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRunaTerciaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearRunaSecundaria"
+                android:layout_alignEnd="@+id/linearRunaSecundaria"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="0dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgbtnRunaTerciaria1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/runa_ataque2"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgflex1" />
+
+                <ImageView
+                    android:id="@+id/imgbtnRunaTerciaria2"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/runa_flex1"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgflex1" />
+
+                <ImageView
+                    android:id="@+id/imgbtnRunaTerciaria3"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/runa_defesa2"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgdefesa2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearDivisao3"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/linearRunaTerciaria"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/marrom_topocontainer"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/textMecanica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearDivisao3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/alegreya_sans_sc"
+                android:letterSpacing=".15"
+                android:text="@string/text_mecanica"
+                android:textColor="@color/marrom_tit_borda"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/textSobre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textMecanica"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/alegreya_sans_sc"
+                android:justificationMode="inter_word"
+                android:text="@string/champ_katarina_mecanica"
+                android:textColor="@color/preto_texto"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeBorda1"
+        app:cardCornerRadius="100dp">
+
+        <ImageView
+            android:id="@+id/imageCampeao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imgkatarina"
+            android:background="@color/white"
+            android:contentDescription="@string/champ_katarina_titulo"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

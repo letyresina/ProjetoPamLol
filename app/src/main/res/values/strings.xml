@@ -9,9 +9,9 @@
     <string name="background_home">Background Home</string>
     <string name="como_usar_titulo">COMO USAR</string>
     <string name="como_usar_texto">
-        Olá, invocador! Após baixar esse aplicativo, é de extrema importância que você saiba a utilidade e como utiliza-lo.<br/>
-        Criamos esse aplicativo com a intenção de auxiliar você com os seus campeões favoritos, suas builds e compreender cada item e sua utilidade.<br/>
-        Clicando em campeões, você será direcionado para a página com todos os ícones e poderá clicar, com uma página que falará brevemente sobre ele, builds e runas com maior taxa de vitória. Na página de itens, você encontrará o que ele faz, o tipo e também os campeões que usam. Dentro de cada uma delas, ao clicar sobre o ícone do campeão ou item, será direcionado para a página também.<br/>
+        Olá, invocador! Após baixar esse aplicativo, é de extrema importância que você saiba a utilidade e como utiliza-lo.<br />
+        Criamos esse aplicativo com a intenção de auxiliar você com os seus campeões favoritos, suas builds e compreender cada item e sua utilidade.<br />
+        Clicando em campeões, você será direcionado para a página com todos os ícones e poderá clicar, com uma página que falará brevemente sobre ele, builds e runas com maior taxa de vitória. Na página de itens, você encontrará o que ele faz, o tipo e também os campeões que usam. Dentro de cada uma delas, ao clicar sobre o ícone do campeão ou item, será direcionado para a página também.<br />
         Abaixo, você poderá acessar ao site do Porofessor, enviar um ticket por e-mail e o compartilhar o aplicativo através do WhatsApp com seusa amigos! Não esqueça de acessar nosso site, invocador!
     </string>
     <string name="botao_porofessor">Botão Porofessor</string>
@@ -48,4 +48,26 @@
     <string name="runa_ataque2">Ataque 2</string>
     <string name="runa_flex1">Flex 1</string>
     <string name="runa_defesa2">Defesa 2</string>
+
+    <string name="champ_katarina_titulo">KATARINA</string>
+    <string name="champ_katarina_frase">A LÂMINA SINISTRA</string>
+    <string name="champ_katarina_mecanica">
+        Explicar mecânica aqui...
+    </string>
+
+    <string name="item_dentedenashor">Dente de NaShor</string>
+    <string name="item_sapatosdofeiticeiro">Sapatos do Feiticeiro</string>
+    <string name="item_ampulhetadezhonya">Ampulheta de Zhonya</string>
+    <string name="item_aeropropulsoraprimorado">Aero Propulsor Aprimorado</string>
+    <string name="item_capuzdamortederabadon">Capuz da Morte de Rabadon</string>
+    <string name="item_ladraodealmasdemejai">Ladrão de Almas de Mejai</string>
+
+
+    <string name="runa_conquistador">Conquistador</string>
+    <string name="runa_lendadetenacidade">Lenda de Tenacidade</string>
+    <string name="runa_golpedemisericordia">Golpe de Misericordia</string>
+    <string name="runa_dominacao">Dominação</string>
+    <string name="runa_impactorepentino">Conquistador</string>
+
+
 </resources>
