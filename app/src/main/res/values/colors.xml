@@ -17,4 +17,6 @@
     <color name="branco_container">#A8EDEDED</color>
     <color name="azul_destaques">#0BC4C2</color>
     <color name="preto_texto">#525252</color>
+    <color name="marrom_topocontainer">#836840</color>
+    <color name="marrom_bordatopocontainer">#C4B998</color>
 </resources>

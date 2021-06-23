@@ -101,7 +101,7 @@
     </RelativeLayout>
 
     <ScrollView
-        android:id="@+id/linearContainer"
+        android:id="@+id/scrollContainer"
         android:layout_width="0dp"
         android:layout_height="500dp"
         android:layout_centerInParent="true"
@@ -117,13 +117,16 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/textTituloSobre"
-                android:layout_width="349dp"
-                android:layout_height="26dp"
-                android:layout_marginStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="0dp"
+                android:layout_marginEnd="10dp"
                 android:layout_marginBottom="0dp"
                 android:fontFamily="@font/alegreya_sans_sc"
                 android:letterSpacing=".15"
@@ -165,8 +168,8 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/linearContainer"
-        app:layout_constraintTop_toTopOf="@+id/linearContainer">
+        app:layout_constraintStart_toStartOf="@+id/scrollContainer"
+        app:layout_constraintTop_toTopOf="@+id/scrollContainer">
 
     </RelativeLayout>
 

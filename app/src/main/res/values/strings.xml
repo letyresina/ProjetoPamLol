@@ -8,14 +8,44 @@
     <string name="entrar">Entrar</string>
     <string name="background_home">Background Home</string>
     <string name="como_usar_titulo">COMO USAR</string>
-    <string name="como_usar_texto">Olá, invocador! Após baixar esse aplicativo, é de extrema importância que você saiba a utilidade e como utiliza-lo.
-        <br/>Criamos esse aplicativo com a intenção de auxiliar você com os seus campeões favoritos, suas builds e compreender cada item e sua utilidade.
-        <br/>Clicando em campeões, você será direcionado para a página com todos os ícones e poderá clicar, com uma página que falará brevemente sobre ele, builds e runas com maior taxa de vitória. Na página de itens, você encontrará o que ele faz, o tipo e também os campeões que usam. Dentro de cada uma delas, ao clicar sobre o ícone do campeão ou item, será direcionado para a página também.
-        <br/>Abaixo, você poderá acessar ao site do Porofessor, enviar um ticket por e-mail e o compartilhar o aplicativo através do WhatsApp com seusa amigos! Não esqueça de acessar nosso site, invocador!</string>
+    <string name="como_usar_texto">
+        Olá, invocador! Após baixar esse aplicativo, é de extrema importância que você saiba a utilidade e como utiliza-lo.<br/>
+        Criamos esse aplicativo com a intenção de auxiliar você com os seus campeões favoritos, suas builds e compreender cada item e sua utilidade.<br/>
+        Clicando em campeões, você será direcionado para a página com todos os ícones e poderá clicar, com uma página que falará brevemente sobre ele, builds e runas com maior taxa de vitória. Na página de itens, você encontrará o que ele faz, o tipo e também os campeões que usam. Dentro de cada uma delas, ao clicar sobre o ícone do campeão ou item, será direcionado para a página também.<br/>
+        Abaixo, você poderá acessar ao site do Porofessor, enviar um ticket por e-mail e o compartilhar o aplicativo através do WhatsApp com seusa amigos! Não esqueça de acessar nosso site, invocador!
+    </string>
     <string name="botao_porofessor">Botão Porofessor</string>
     <string name="botao_email">Botão Email</string>
     <string name="botao_whatsapp">Botão Whatsapp</string>
     <string name="botao_home">Botão Home</string>
     <string name="botao_campeoes">Botão Campeões</string>
     <string name="botao_itens">Botão Icones</string>
+
+    <string name="text_buildgeral">BUILD GERAL</string>
+    <string name="text_runageral">RUNA GERAL</string>
+    <string name="text_mecanica">MECÂNICA</string>
+
+    <string name="champ_kalista_titulo">KALISTA</string>
+    <string name="champ_kalista_frase">A LANÇA DA VINGANÇA</string>
+    <string name="champ_kalista_mecanica">
+        Explicar mecânica aqui...
+    </string>
+
+    <string name="item_arcoescudoimortal">Arco-Escudo Imortal</string>
+    <string name="item_grevasdoberserker">Grevas do Berserker</string>
+    <string name="item_laminadafuriadeguinsoo">Lâmina Furia de Guinsoo</string>
+    <string name="item_furacaoderunaan">Furacão de Runaan</string>
+    <string name="item_sedentaporsangue">Sedenta por Sangue</string>
+    <string name="item_espadadoreidestruido">Espada do Rei Destruido</string>
+
+    <string name="runa_chuvadelaminas">Chuva de Lâminas</string>
+    <string name="runa_gostodesangue">Gosto de Sangue</string>
+    <string name="runa_globosoculares">Globos Oculares</string>
+    <string name="runa_cacavoraz">Caça Voraz</string>
+    <string name="runa_precisao">Precisão</string>
+    <string name="runa_triunfo">Triunfo</string>
+    <string name="runa_lendaespontaneidade">Lenda: Espontaneidade</string>
+    <string name="runa_ataque2">Ataque 2</string>
+    <string name="runa_flex1">Flex 1</string>
+    <string name="runa_defesa2">Defesa 2</string>
 </resources>

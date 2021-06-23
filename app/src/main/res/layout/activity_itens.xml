@@ -102,7 +102,7 @@
 
 
     <ScrollView
-        android:id="@+id/linearContainer"
+        android:id="@+id/scrollContainer"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_centerInParent="true"
@@ -396,8 +396,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/linearContainer"
-        app:layout_constraintTop_toTopOf="@+id/linearContainer">
+        app:layout_constraintStart_toStartOf="@+id/scrollContainer"
+        app:layout_constraintTop_toTopOf="@+id/scrollContainer">
 
     </RelativeLayout>
 
