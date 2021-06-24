@@ -21,14 +21,13 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        /* Para pegar Nickname do Login
+        // Para pegar Nickname do Login
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.NICKNAME);*/
+        String nickname = intent.getStringExtra(MainActivity.NICKNAME);
 
-        /* Cria um elemento text view
-        TextView textView = new TextView(this);
-        textView.setTextSize(24);
-        textView.setText(message);*/
+        // Insere o texto
+        TextView textView = (TextView) findViewById(R.id.textNickname);
+        textView.setText(getString(R.string.text_olainvocador, nickname));
 
         /* Define o text view com layout ativo
         setContentView(textView);*/

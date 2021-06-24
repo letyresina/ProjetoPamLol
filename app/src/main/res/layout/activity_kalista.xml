@@ -544,7 +544,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/imgkalista"
             android:background="@color/white"
-            android:contentDescription="@string/champ_kalista_titulo"
+            android:contentDescription="@string/champ_kalista"
             android:scaleType="centerCrop" />
     </androidx.cardview.widget.CardView>
 

@@ -192,9 +192,11 @@
                     android:layout_height="98dp"
                     android:layout_width="80dp"
                     android:background="@android:color/background_dark"
-                    android:contentDescription="@string/item_cronometro"
+                    android:contentDescription="@string/item_arcoescudoimortal"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/imgcronometro" />
+                    app:srcCompat="@drawable/imgarcoescudoimortal"
+
+                    android:onClick="abrirArcoescudoimortalActivity"/>
 
             </TableRow>
 
@@ -210,7 +212,9 @@
                     android:background="@android:color/background_dark"
                     android:contentDescription="@string/item_dentedenashor"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/imgdentedenashor" />
+                    app:srcCompat="@drawable/imgdentedenashor"
+
+                    android:onClick="abrirDentedenashorActivity"/>
 
                 <ImageButton
                     android:layout_weight="1"

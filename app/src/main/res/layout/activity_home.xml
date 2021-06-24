@@ -137,10 +137,25 @@
                 android:typeface="normal" />
 
             <TextView
-                android:id="@+id/textSobre"
+                android:id="@+id/textNickname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textTituloSobre"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/alegreya_sans_sc"
+                android:justificationMode="inter_word"
+                android:text="@string/text_olainvocador"
+                android:textColor="@color/preto_texto"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/textSobre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textNickname"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="10dp"

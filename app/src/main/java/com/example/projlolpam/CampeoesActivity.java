@@ -28,4 +28,9 @@ public class CampeoesActivity extends AppCompatActivity {
         Intent intent = new Intent(this, KalistaActivity.class);
         startActivity(intent);
     }
+
+    public void abrirKatarinaActivity(View view) {
+        Intent intent = new Intent(this, KatarinaActivity.class);
+        startActivity(intent);
+    }
 }

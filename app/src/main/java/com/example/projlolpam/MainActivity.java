@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    //public final static String NICKNAME = "com.example.projlolpam.HomeActivity";
+    public final static String NICKNAME = ".NICKNAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void abrirHomeActivity(View view) {
         Intent intent = new Intent(this, HomeActivity.class);
-        /*EditText editText = (EditText) findViewById(R.id.editNickname);
+        EditText editText = (EditText) findViewById(R.id.editNickname);
 
         String nickname = editText.getText().toString();
-        intent.putExtra(NICKNAME, nickname);*/
+        intent.putExtra(NICKNAME, nickname);
         startActivity(intent);
     }
 }

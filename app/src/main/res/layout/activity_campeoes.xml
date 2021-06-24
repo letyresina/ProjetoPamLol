@@ -232,7 +232,9 @@
                     android:background="@android:color/background_dark"
                     android:contentDescription="@string/champ_katarina"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/imgkatarina" />
+                    app:srcCompat="@drawable/imgkatarina"
+
+                    android:onClick="abrirKatarinaActivity"/>
 
             </TableRow>
 

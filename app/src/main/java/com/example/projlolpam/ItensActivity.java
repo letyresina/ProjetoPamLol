@@ -23,4 +23,14 @@ public class ItensActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CampeoesActivity.class);
         startActivity(intent);
     }
+
+    public void abrirArcoescudoimortalActivity(View view) {
+        Intent intent = new Intent(this, ArcoEscudoImortalActivity.class);
+        startActivity(intent);
+    }
+
+    public void abrirDentedenashorActivity(View view) {
+        Intent intent = new Intent(this, DenteDeNashorActivity.class);
+        startActivity(intent);
+    }
 }
