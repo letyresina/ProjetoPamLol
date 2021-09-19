@@ -72,27 +72,6 @@
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/editNickname"
-        android:layout_width="210dp"
-        tools:ignore="LabelFor"
-        android:autofillHints=""
-        android:layout_height="39dp"
-        android:textSize="16sp"
-        android:background="@drawable/inputs"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="@color/preto_texto"
-        android:textColorHighlight="@color/preto_texto"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imgBackground"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/imgBackground"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.729"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp" />
-
     <TextView
         android:id="@+id/textNickname"
         android:layout_width="wrap_content"
@@ -111,20 +90,71 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+
+    <EditText
+        android:id="@+id/editNickname"
+        android:layout_width="210dp"
+        android:layout_height="39dp"
+        android:autofillHints=""
+        android:background="@drawable/inputs"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@color/preto_texto"
+        android:textColorHighlight="@color/preto_texto"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgBackground"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imgBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textRegiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/alegreya_sans_sc"
+        android:letterSpacing=".17"
+        android:text="@string/regiao"
+        android:textColor="@color/branco_textcabecalho"
+        android:textSize="20sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerRegiao"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerRegiao"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerRegiao"
+        app:layout_constraintTop_toBottomOf="@+id/editNickname"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/spinnerRegiao"
+        android:layout_width="105dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editNickname"
+        app:layout_constraintTop_toBottomOf="@+id/editNickname" />
+
     <Button
         android:id="@+id/btnEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/botao"
+        android:onClick="abrirHomeActivity"
         android:text="@string/entrar"
         android:textColor="@color/marrom_textobtn"
-        android:layout_marginTop="14dp"
         app:backgroundTint="@color/marrom_btn"
-        app:layout_constraintEnd_toEndOf="@+id/editNickname"
-        app:layout_constraintStart_toStartOf="@+id/editNickname"
-        app:layout_constraintTop_toBottomOf="@+id/editNickname"
-
-        android:onClick="abrirHomeActivity" />
+        app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRegiao" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

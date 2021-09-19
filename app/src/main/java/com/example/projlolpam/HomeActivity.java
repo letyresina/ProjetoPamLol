@@ -3,6 +3,7 @@ package com.example.projlolpam;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -15,15 +16,17 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 public class HomeActivity extends AppCompatActivity {
+    private static final String ARQUIVO_PREFERENCIAS = "ArquivoPreferencia";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        SharedPreferences preferences = getSharedPreferences(ARQUIVO_PREFERENCIAS, 0);
         // Para pegar Nickname do Login
-        Intent intent = getIntent();
-        String nickname = intent.getStringExtra(MainActivity.NICKNAME);
+        String nickname = preferences.getString("Nick", "invocador");
+
 
         // Insere o texto
         TextView textView = (TextView) findViewById(R.id.textNickname);
