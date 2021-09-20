@@ -27,15 +27,9 @@ public class HomeActivity extends AppCompatActivity {
         // Para pegar Nickname do Login
         String nickname = preferences.getString("Nick", "invocador");
 
-
         // Insere o texto
         TextView textView = (TextView) findViewById(R.id.textNickname);
         textView.setText(getString(R.string.text_olainvocador, nickname));
-
-        /* Define o text view com layout ativo
-        setContentView(textView);*/
-
-
     }
     public void abrirPorofessor(View view)
     {
