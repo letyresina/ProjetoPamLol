@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DenteDeNashorActivity">
+    tools:context=".PerfilActivity">
 
     <ImageView
         android:id="@+id/imgBackground"
@@ -69,8 +69,6 @@
         app:layout_constraintStart_toStartOf="@+id/linearContainer"
         app:layout_constraintTop_toTopOf="@+id/linearContainer">
 
-
-
     </RelativeLayout>
 
     <ScrollView
@@ -91,7 +89,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textTituloItem"
+                android:id="@+id/textNicknameInvocador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -99,33 +97,33 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/alegreya_sans_sc"
                 android:letterSpacing=".15"
-                android:text="@string/item_dentedenashor"
+                android:text="@string/invocador_nickname"
                 android:textAlignment="center"
                 android:textColor="@color/marrom_tit_borda"
                 android:textSize="24sp"
                 android:typeface="normal" />
 
             <TextView
-                android:id="@+id/textSobre"
+                android:id="@+id/textRegiaoInvocador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textTituloItem"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/textNicknameInvocador"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="0dp"
                 android:fontFamily="@font/alegreya_sans_sc"
-                android:justificationMode="inter_word"
-                android:text="@string/item_dentedenashor_sobre"
-                android:textColor="@color/preto_texto"
-                android:textSize="18sp"
+                android:letterSpacing=".15"
+                android:text="@string/invocador_regiao"
+                android:textAlignment="center"
+                android:textColor="@color/marrom_tit_borda"
+                android:textSize="16sp"
                 android:typeface="normal" />
 
             <LinearLayout
                 android:id="@+id/linearDivisao1"
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
-                android:layout_below="@+id/textSobre"
+                android:layout_below="@+id/textRegiaoInvocador"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_centerHorizontal="true"
@@ -136,7 +134,7 @@
                 android:orientation="horizontal" />
 
             <TextView
-                android:id="@+id/textCampeoesRecomendados"
+                android:id="@+id/textConfiguracaoGeral"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/linearDivisao1"
@@ -146,105 +144,10 @@
                 android:layout_marginStart="18dp"
                 android:fontFamily="@font/alegreya_sans_sc"
                 android:letterSpacing=".15"
-                android:text="@string/text_campeoesrecomendados"
+                android:text="@string/text_configuracaogeral"
                 android:textColor="@color/marrom_tit_borda"
                 android:textSize="18sp"
                 android:typeface="normal" />
-
-            <LinearLayout
-                android:id="@+id/linearBuild"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textCampeoesRecomendados"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="9dp"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_marginStart="30dp"
-                    app:layout_constraintEnd_toEndOf="@+id/linearContainer"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/relativeBorda1"
-                    app:cardCornerRadius="100dp">
-
-                    <ImageView
-                        android:id="@+id/imageCampeaoRecomendado1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/imgkatarina"
-                        android:background="@color/black"
-                        android:contentDescription="@string/champ_katarina"
-                        android:scaleType="centerCrop" />
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_marginStart="10dp"
-                    app:layout_constraintEnd_toEndOf="@+id/linearContainer"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/relativeBorda1"
-                    app:cardCornerRadius="100dp">
-
-                    <ImageView
-                        android:id="@+id/imageCampeaoRecomendado2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/imgdiana"
-                        android:background="@color/black"
-                        android:contentDescription="@string/champ_diana"
-                        android:scaleType="centerCrop" />
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_marginStart="10dp"
-                    app:layout_constraintEnd_toEndOf="@+id/linearContainer"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/relativeBorda1"
-                    app:cardCornerRadius="100dp">
-
-                    <ImageView
-                        android:id="@+id/imageCampeaoRecomendado3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/imgtwitch"
-                        android:background="@color/black"
-                        android:contentDescription="@string/champ_twitch"
-                        android:scaleType="centerCrop" />
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_marginStart="10dp"
-                    app:layout_constraintEnd_toEndOf="@+id/linearContainer"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/relativeBorda1"
-                    app:cardCornerRadius="100dp">
-
-                    <ImageView
-                        android:id="@+id/imageCampeaoRecomendado4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/imgteemo"
-                        android:background="@color/black"
-                        android:contentDescription="@string/champ_teemo"
-                        android:scaleType="centerCrop" />
-
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-
 
         </RelativeLayout>
 
@@ -260,15 +163,13 @@
         app:cardCornerRadius="100dp">
 
         <ImageView
-            android:id="@+id/imageDenteDeNashor"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:contentDescription="@string/item_dentedenashor"
-            android:scaleType="centerCrop"
-            android:src="@drawable/imgdentedenashor" />
-
+            android:id="@+id/imageInvocador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imginvocador"
+            android:background="@color/white"
+            android:contentDescription="@string/invocador_imagem"
+            android:scaleType="centerCrop" />
     </androidx.cardview.widget.CardView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

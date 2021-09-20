@@ -14,13 +14,29 @@ public class ArcoEscudoImortalActivity extends AppCompatActivity {
         setContentView(R.layout.activity_arco_escudo_imortal);
     }
 
+    // Navegação pelas Activities
+
     public void abrirHomeActivity(View view) {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public void abrirCampeoesActivity(View view) {
         Intent intent = new Intent(this, CampeoesActivity.class);
         startActivity(intent);
+        finish();
+    }
+
+    public void abrirItensActivity(View view) {
+        Intent intent = new Intent(this, ItensActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void abrirPerfilActivity(View view) {
+        Intent intent = new Intent(this, PerfilActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

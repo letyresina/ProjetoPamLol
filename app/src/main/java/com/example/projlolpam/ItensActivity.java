@@ -14,16 +14,6 @@ public class ItensActivity extends AppCompatActivity {
         setContentView(R.layout.activity_itens);
     }
 
-    public void abrirHomeActivity(View view) {
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
-    }
-
-    public void abrirCampeoesActivity(View view) {
-        Intent intent = new Intent(this, CampeoesActivity.class);
-        startActivity(intent);
-    }
-
     public void abrirArcoescudoimortalActivity(View view) {
         Intent intent = new Intent(this, ArcoEscudoImortalActivity.class);
         startActivity(intent);
@@ -32,5 +22,35 @@ public class ItensActivity extends AppCompatActivity {
     public void abrirDentedenashorActivity(View view) {
         Intent intent = new Intent(this, DenteDeNashorActivity.class);
         startActivity(intent);
+    }
+
+    // Navegação pelas Activities
+
+    public void abrirHomeActivity(View view) {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
+    }
+
+    public void abrirCampeoesActivity(View view) {
+        Intent intent = new Intent(this, CampeoesActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
+    }
+
+    public void abrirItensActivity(View view) {
+        Intent intent = new Intent(this, ItensActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
+    }
+
+    public void abrirPerfilActivity(View view) {
+        Intent intent = new Intent(this, PerfilActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
     }
 }

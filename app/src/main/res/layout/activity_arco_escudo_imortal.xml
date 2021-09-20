@@ -19,70 +19,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/imagemprojeto2" />
 
-    <LinearLayout
-        android:id="@+id/linearCabecalho"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:layout_centerInParent="true"
-        android:background="@color/preto_cabecalho"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imgBackground">
-
-        <ImageView
-            android:id="@+id/imgLogo"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="20dp"
-            android:contentDescription="@string/logo"
-            app:srcCompat="@drawable/applogo" />
-
-        <ImageButton
-            android:id="@+id/imgbtnHome"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/botao_home"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/imghome"
-
-            android:onClick="abrirHomeActivity" />
-
-        <ImageButton
-            android:id="@+id/imgbtnCampeoes"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/botao_campeoes"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/imgcampeoes"
-
-            android:onClick="abrirCampeoesActivity"/>
-
-        <ImageButton
-            android:id="@+id/imgbtnItens"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="50dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/botao_itens"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/imgitens" />
-
-    </LinearLayout>
+    <!-- Include da Navbar -->
+    <include layout="@layout/layout_navbar"/>
 
     <RelativeLayout
         android:id="@+id/relativeBorda1"

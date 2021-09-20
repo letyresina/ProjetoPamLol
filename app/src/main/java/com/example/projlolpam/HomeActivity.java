@@ -23,9 +23,9 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        // Para pegar Nickname do Invocador pelo SharedPreferences
         SharedPreferences preferences = getSharedPreferences(ARQUIVO_PREFERENCIAS, 0);
-        // Para pegar Nickname do Login
-        String nickname = preferences.getString("Nick", "invocador");
+        String nickname = preferences.getString("Nick", "Forasteiro");
 
         // Insere o texto
         TextView textView = (TextView) findViewById(R.id.textNickname);
@@ -63,13 +63,33 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
+    // Navegação pelas Activities
+
+    public void abrirHomeActivity(View view) {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
+    }
+
     public void abrirCampeoesActivity(View view) {
         Intent intent = new Intent(this, CampeoesActivity.class);
         startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
     }
 
     public void abrirItensActivity(View view) {
         Intent intent = new Intent(this, ItensActivity.class);
         startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
+    }
+
+    public void abrirPerfilActivity(View view) {
+        Intent intent = new Intent(this, PerfilActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
     }
 }

@@ -31,7 +31,7 @@
     <!-- ITENS -->
     <string name="item_arcoescudoimortal">Arco-Escudo Imortal</string>
     <string name="item_arcoescudoimortal_sobre">
-        Custando 3400 na loja, o Arco-Escudo Imortal (ou imoral) entrega 55 de dano de ataque, 20% de velocidade de ataque, 20% de chance de acerto crítico e 10% de roubo de vida, sendo essencial para campeões que precisam sobreviver antes de serem letais, tanto contra campeões que causam dano explosivo na lane phase quanto para TeamFights.<br/>
+        Custando 3400 na loja, o Arco-Escudo Imortal (ou imoral) entrega 55 de dano de ataque, 20% de velocidade de ataque, 20% de chance de acerto crítico e 10% de roubo de vida, sendo essencial para campeões que precisam sobreviver antes de serem letais, tanto contra campeões que causam dano explosivo na lane phase quanto para TeamFights.<br />
         Sua passiva (Salva-Vidas) fornece um escudo ao sofrer dano que reduziria sua vida a menos de 30% e 15% de roubo de vida extra.
     </string>
 
@@ -136,5 +136,11 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum<br />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo arcu. Integer hendrerit feugiat luctus. Nulla tincidunt enim in turpis tincidunt, et condimentum
     </string>
+
+    <!-- INVOCADOR -->
+    <string name="invocador_nickname">%1$s</string>
+    <string name="invocador_regiao">%1$s</string>
+    <string name="invocador_imagem">INVOCADOR</string>
+    <string name="text_configuracaogeral">CONFIGURAÇÃO GERAL</string>
 
 </resources>
