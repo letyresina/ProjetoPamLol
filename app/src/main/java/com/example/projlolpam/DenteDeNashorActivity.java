@@ -40,6 +40,7 @@ public class DenteDeNashorActivity extends AppCompatActivity {
             imgbtnItens.setImageResource(R.drawable.imgitens);
             imgbtnPerfil.setImageResource(R.drawable.imgperfil);
             imgBackground.setImageResource(R.drawable.imggwen);
+            imgBackground.setScrollX(-240);
             scrollContainer.setBackgroundResource(R.color.preto_container);
             textTituloItem.setTextColor(getResources().getColor(R.color.branco_tit_borda));
             textSobre.setTextColor(getResources().getColor(R.color.branco_texto));
@@ -74,7 +75,6 @@ public class DenteDeNashorActivity extends AppCompatActivity {
     public void abrirPerfilActivity(View view) {
         Intent intent = new Intent(this, PerfilActivity.class);
         startActivity(intent);
-        this.overridePendingTransition(0, 0);
         finish();
     }
 }

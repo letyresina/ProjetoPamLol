@@ -40,6 +40,7 @@ public class ArcoEscudoImortalActivity extends AppCompatActivity {
             imgbtnItens.setImageResource(R.drawable.imgitens);
             imgbtnPerfil.setImageResource(R.drawable.imgperfil);
             imgBackground.setImageResource(R.drawable.imggwen);
+            imgBackground.setScrollX(-240);
             scrollContainer.setBackgroundResource(R.color.preto_container);
             textTituloItem.setTextColor(getResources().getColor(R.color.branco_tit_borda));
             textSobre.setTextColor(getResources().getColor(R.color.branco_texto));
@@ -53,18 +54,21 @@ public class ArcoEscudoImortalActivity extends AppCompatActivity {
     public void abrirHomeActivity(View view) {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
+        this.overridePendingTransition(0, 0);
         finish();
     }
 
     public void abrirCampeoesActivity(View view) {
         Intent intent = new Intent(this, CampeoesActivity.class);
         startActivity(intent);
+        this.overridePendingTransition(0, 0);
         finish();
     }
 
     public void abrirItensActivity(View view) {
         Intent intent = new Intent(this, ItensActivity.class);
         startActivity(intent);
+        this.overridePendingTransition(0, 0);
         finish();
     }
 

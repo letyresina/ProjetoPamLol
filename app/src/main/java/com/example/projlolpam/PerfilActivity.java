@@ -67,10 +67,12 @@ public class PerfilActivity extends AppCompatActivity {
             imgbtnItens.setImageResource(R.drawable.imgitens);
             imgbtnPerfil.setImageResource(R.drawable.imgperfil);
             imgBackground.setImageResource(R.drawable.imggwen);
+            imgBackground.setScrollX(-240);
             scrollContainer.setBackgroundResource(R.color.preto_container);
             textNicknameInvocador.setTextColor(getResources().getColor(R.color.branco_texto));
             textRegiaoInvocador.setTextColor(getResources().getColor(R.color.branco_texto));
             textConfiguracaoGeral.setTextColor(getResources().getColor(R.color.branco_texto));
+            switchTema.setTextColor(getResources().getColor(R.color.branco_texto));
         }
     }
 

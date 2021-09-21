@@ -35,6 +35,7 @@ public class ItensActivity extends AppCompatActivity {
             imgbtnItens.setImageResource(R.drawable.imgitens);
             imgbtnPerfil.setImageResource(R.drawable.imgperfil);
             imgBackground.setImageResource(R.drawable.imggwen);
+            imgBackground.setScrollX(-240);
             scrollContainer.setBackgroundResource(R.color.preto_container);
         }
     }
@@ -75,7 +76,6 @@ public class ItensActivity extends AppCompatActivity {
     public void abrirPerfilActivity(View view) {
         Intent intent = new Intent(this, PerfilActivity.class);
         startActivity(intent);
-        this.overridePendingTransition(0, 0);
         finish();
     }
 }
