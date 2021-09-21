@@ -7,6 +7,10 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 
@@ -30,6 +34,28 @@ public class HomeActivity extends AppCompatActivity {
         // Insere o texto
         TextView textView = (TextView) findViewById(R.id.textNickname);
         textView.setText(getString(R.string.text_olainvocador, nickname));
+
+        if (preferences.getBoolean("Dark", false)){
+            LinearLayout linearCabecalho = (LinearLayout) findViewById(R.id.linearCabecalho);
+            ImageButton imgbtnCampeoes = (ImageButton) findViewById(R.id.imgbtnCampeoes);
+            ImageButton imgbtnItens = (ImageButton) findViewById(R.id.imgbtnItens);
+            ImageButton imgbtnPerfil = (ImageButton) findViewById(R.id.imgbtnPerfil);
+            ImageView imgBackground = (ImageView) findViewById(R.id.imgBackground);
+            ScrollView scrollContainer = (ScrollView) findViewById(R.id.scrollContainer);
+            TextView textTituloSobre = (TextView) findViewById(R.id.textTituloSobre);
+            TextView textNickname = (TextView) findViewById(R.id.textNickname);
+            TextView textSobre = (TextView) findViewById(R.id.textSobre);
+
+            linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
+            imgbtnCampeoes.setBackgroundResource(R.drawable.imgcampeoes);
+            imgbtnItens.setBackgroundResource(R.drawable.imgitens);
+            imgbtnPerfil.setBackgroundResource(R.drawable.imgperfil);
+            imgBackground.setBackgroundResource(R.drawable.imggwen);
+            scrollContainer.setBackgroundResource(R.color.preto_container);
+            textTituloSobre.setBackgroundResource(R.color.branco_tit_borda);
+            textNickname.setBackgroundResource(R.color.branco_texto);
+            textSobre.setBackgroundResource(R.color.branco_texto);
+        }
     }
     public void abrirPorofessor(View view)
     {

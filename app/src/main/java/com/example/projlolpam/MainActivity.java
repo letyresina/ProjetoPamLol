@@ -122,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
             editor.putString("Nick", nick);
             editor.putString("Regiao", regiao);
+            editor.putBoolean("Dark", false);
             editor.apply();
 
             Intent intent = new Intent(this, HomeActivity.class);

@@ -142,5 +142,6 @@
     <string name="invocador_regiao">%1$s</string>
     <string name="invocador_imagem">INVOCADOR</string>
     <string name="text_configuracaogeral">CONFIGURAÇÃO GERAL</string>
+    <string name="lighttexto">DARK MODE</string>
 
 </resources>

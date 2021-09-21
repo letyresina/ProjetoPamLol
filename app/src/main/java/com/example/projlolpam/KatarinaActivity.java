@@ -3,15 +3,59 @@ package com.example.projlolpam;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
 
 public class KatarinaActivity extends AppCompatActivity {
+    private static final String ARQUIVO_PREFERENCIAS = "ArquivoPreferencia";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_katarina);
+
+        SharedPreferences preferences = getSharedPreferences(ARQUIVO_PREFERENCIAS, 0);
+        SharedPreferences.Editor editor = preferences.edit();
+
+        if (preferences.getBoolean("Dark", false)) {
+            LinearLayout linearCabecalho = (LinearLayout) findViewById(R.id.linearCabecalho);
+            ImageButton imgbtnCampeoes = (ImageButton) findViewById(R.id.imgbtnCampeoes);
+            ImageButton imgbtnItens = (ImageButton) findViewById(R.id.imgbtnItens);
+            ImageButton imgbtnPerfil = (ImageButton) findViewById(R.id.imgbtnPerfil);
+            ImageView imgBackground = (ImageView) findViewById(R.id.imgBackground);
+            ScrollView scrollContainer = (ScrollView) findViewById(R.id.scrollContainer);
+            TextView textTituloCampeao = (TextView) findViewById(R.id.textTituloCampeao);
+            TextView textFraseCampeao = (TextView) findViewById(R.id.textFraseCampeao);
+            TextView textBuildGeral = (TextView) findViewById(R.id.textBuildGeral);
+            TextView textRunaGeral = (TextView) findViewById(R.id.textRunaGeral);
+            TextView textMecanica = (TextView) findViewById(R.id.textMecanica);
+            TextView textSobre = (TextView) findViewById(R.id.textSobre);
+            LinearLayout linearDivisao1 = (LinearLayout) findViewById(R.id.linearDivisao1);
+            LinearLayout linearDivisao2 = (LinearLayout) findViewById(R.id.linearDivisao2);
+            LinearLayout linearDivisao3 = (LinearLayout) findViewById(R.id.linearDivisao3) ;
+
+            linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
+            imgbtnCampeoes.setBackgroundResource(R.drawable.imgcampeoes);
+            imgbtnItens.setBackgroundResource(R.drawable.imgitens);
+            imgbtnPerfil.setBackgroundResource(R.drawable.imgperfil);
+            imgBackground.setBackgroundResource(R.drawable.imggwen);
+            scrollContainer.setBackgroundResource(R.color.preto_container);
+            textTituloCampeao.setBackgroundResource(R.color.branco_texto);
+            textFraseCampeao.setBackgroundResource(R.color.branco_texto);
+            textBuildGeral.setBackgroundResource(R.color.branco_texto);
+            textRunaGeral.setBackgroundResource(R.color.branco_texto);
+            textMecanica.setBackgroundResource(R.color.branco_texto);
+            textSobre.setBackgroundResource(R.color.branco_texto);
+            linearDivisao1.setBackgroundResource(R.color.branco_topocontainer);
+            linearDivisao2.setBackgroundResource(R.color.branco_topocontainer);
+            linearDivisao3.setBackgroundResource(R.color.branco_topocontainer);
+        }
     }
 
     // Navegação pelas Activities
