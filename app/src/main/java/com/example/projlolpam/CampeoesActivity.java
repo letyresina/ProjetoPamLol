@@ -31,10 +31,10 @@ public class CampeoesActivity extends AppCompatActivity {
             ScrollView scrollContainer = (ScrollView) findViewById(R.id.scrollContainer);
 
             linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
-            imgbtnCampeoes.setBackgroundResource(R.drawable.imgcampeoes);
-            imgbtnItens.setBackgroundResource(R.drawable.imgitens);
-            imgbtnPerfil.setBackgroundResource(R.drawable.imgperfil);
-            imgBackground.setBackgroundResource(R.drawable.imggwen);
+            imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
+            imgbtnItens.setImageResource(R.drawable.imgitens);
+            imgbtnPerfil.setImageResource(R.drawable.imgperfil);
+            imgBackground.setImageResource(R.drawable.imggwen);
             scrollContainer.setBackgroundResource(R.color.preto_container);
         }
     }

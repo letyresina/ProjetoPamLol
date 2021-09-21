@@ -36,14 +36,14 @@ public class DenteDeNashorActivity extends AppCompatActivity {
             LinearLayout linearDivisao1 = (LinearLayout) findViewById(R.id.linearDivisao1);
 
             linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
-            imgbtnCampeoes.setBackgroundResource(R.drawable.imgcampeoes);
-            imgbtnItens.setBackgroundResource(R.drawable.imgitens);
-            imgbtnPerfil.setBackgroundResource(R.drawable.imgperfil);
-            imgBackground.setBackgroundResource(R.drawable.imggwen);
+            imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
+            imgbtnItens.setImageResource(R.drawable.imgitens);
+            imgbtnPerfil.setImageResource(R.drawable.imgperfil);
+            imgBackground.setImageResource(R.drawable.imggwen);
             scrollContainer.setBackgroundResource(R.color.preto_container);
-            textTituloItem.setBackgroundResource(R.color.branco_texto);
-            textSobre.setBackgroundResource(R.color.branco_texto);
-            textCampeoesRecomendados.setBackgroundResource(R.color.branco_texto);
+            textTituloItem.setTextColor(getResources().getColor(R.color.branco_tit_borda));
+            textSobre.setTextColor(getResources().getColor(R.color.branco_texto));
+            textCampeoesRecomendados.setTextColor(getResources().getColor(R.color.branco_tit_borda));
             linearDivisao1.setBackgroundResource(R.color.branco_topocontainer);
         }
     }

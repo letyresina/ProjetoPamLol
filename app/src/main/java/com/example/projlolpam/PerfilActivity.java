@@ -63,14 +63,14 @@ public class PerfilActivity extends AppCompatActivity {
             TextView textConfiguracaoGeral = (TextView) findViewById(R.id.textConfiguracaoGeral);
 
             linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
-            imgbtnCampeoes.setBackgroundResource(R.drawable.imgcampeoes);
-            imgbtnItens.setBackgroundResource(R.drawable.imgitens);
-            imgbtnPerfil.setBackgroundResource(R.drawable.imgperfil);
-            imgBackground.setBackgroundResource(R.drawable.imggwen);
+            imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
+            imgbtnItens.setImageResource(R.drawable.imgitens);
+            imgbtnPerfil.setImageResource(R.drawable.imgperfil);
+            imgBackground.setImageResource(R.drawable.imggwen);
             scrollContainer.setBackgroundResource(R.color.preto_container);
-            textNicknameInvocador.setBackgroundResource(R.color.branco_texto);
-            textRegiaoInvocador.setBackgroundResource(R.color.branco_texto);
-            textConfiguracaoGeral.setBackgroundResource(R.color.branco_texto);
+            textNicknameInvocador.setTextColor(getResources().getColor(R.color.branco_texto));
+            textRegiaoInvocador.setTextColor(getResources().getColor(R.color.branco_texto));
+            textConfiguracaoGeral.setTextColor(getResources().getColor(R.color.branco_texto));
         }
     }
 

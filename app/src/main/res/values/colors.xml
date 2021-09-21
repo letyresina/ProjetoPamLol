@@ -17,7 +17,7 @@
     <color name="branco_textcabecalho">#F9F9F9</color>
     <color name="branco_fundo_input">#EDEDED</color>
     <color name="branco_container">#A8EDEDED</color>
-    <color name="preto_container">#363636</color>
+    <color name="preto_container">#A8363636</color>
     <color name="azul_destaques">#0BC4C2</color>
     <color name="preto_texto">#525252</color>
     <color name="branco_texto">#E0E0E0</color>

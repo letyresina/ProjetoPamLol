@@ -47,14 +47,14 @@ public class HomeActivity extends AppCompatActivity {
             TextView textSobre = (TextView) findViewById(R.id.textSobre);
 
             linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
-            imgbtnCampeoes.setBackgroundResource(R.drawable.imgcampeoes);
-            imgbtnItens.setBackgroundResource(R.drawable.imgitens);
-            imgbtnPerfil.setBackgroundResource(R.drawable.imgperfil);
-            imgBackground.setBackgroundResource(R.drawable.imggwen);
+            imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
+            imgbtnItens.setImageResource(R.drawable.imgitens);
+            imgbtnPerfil.setImageResource(R.drawable.imgperfil);
+            imgBackground.setImageResource(R.drawable.imggwen);
             scrollContainer.setBackgroundResource(R.color.preto_container);
-            textTituloSobre.setBackgroundResource(R.color.branco_tit_borda);
-            textNickname.setBackgroundResource(R.color.branco_texto);
-            textSobre.setBackgroundResource(R.color.branco_texto);
+            textTituloSobre.setTextColor(getResources().getColor(R.color.branco_tit_borda));
+            textNickname.setTextColor(getResources().getColor(R.color.branco_texto));
+            textSobre.setTextColor(getResources().getColor(R.color.branco_texto));
         }
     }
     public void abrirPorofessor(View view)

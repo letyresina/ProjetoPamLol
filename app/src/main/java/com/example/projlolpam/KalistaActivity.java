@@ -43,17 +43,17 @@ public class KalistaActivity extends AppCompatActivity {
             LinearLayout linearDivisao3 = (LinearLayout) findViewById(R.id.linearDivisao3) ;
 
             linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
-            imgbtnCampeoes.setBackgroundResource(R.drawable.imgcampeoes);
-            imgbtnItens.setBackgroundResource(R.drawable.imgitens);
-            imgbtnPerfil.setBackgroundResource(R.drawable.imgperfil);
-            imgBackground.setBackgroundResource(R.drawable.imggwen);
+            imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
+            imgbtnItens.setImageResource(R.drawable.imgitens);
+            imgbtnPerfil.setImageResource(R.drawable.imgperfil);
+            imgBackground.setImageResource(R.drawable.imggwen);
             scrollContainer.setBackgroundResource(R.color.preto_container);
-            textTituloCampeao.setBackgroundResource(R.color.branco_texto);
-            textFraseCampeao.setBackgroundResource(R.color.branco_texto);
-            textBuildGeral.setBackgroundResource(R.color.branco_texto);
-            textRunaGeral.setBackgroundResource(R.color.branco_texto);
-            textMecanica.setBackgroundResource(R.color.branco_texto);
-            textSobre.setBackgroundResource(R.color.branco_texto);
+            textTituloCampeao.setTextColor(getResources().getColor(R.color.branco_tit_borda));
+            textFraseCampeao.setTextColor(getResources().getColor(R.color.branco_texto));
+            textBuildGeral.setTextColor(getResources().getColor(R.color.branco_texto));
+            textRunaGeral.setTextColor(getResources().getColor(R.color.branco_tit_borda));
+            textMecanica.setTextColor(getResources().getColor(R.color.branco_tit_borda));
+            textSobre.setTextColor(getResources().getColor(R.color.branco_texto));
             linearDivisao1.setBackgroundResource(R.color.branco_topocontainer);
             linearDivisao2.setBackgroundResource(R.color.branco_topocontainer);
             linearDivisao3.setBackgroundResource(R.color.branco_topocontainer);
