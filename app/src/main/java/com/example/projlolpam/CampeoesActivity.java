@@ -34,7 +34,7 @@ public class CampeoesActivity extends AppCompatActivity {
             imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
             imgbtnItens.setImageResource(R.drawable.imgitens);
             imgbtnPerfil.setImageResource(R.drawable.imgperfil);
-            imgBackground.setImageResource(R.drawable.imggwen);
+            imgBackground.setImageResource(R.drawable.imggwen_fundo);
             imgBackground.setScrollX(-240);
             scrollContainer.setBackgroundResource(R.color.preto_container);
         }

@@ -13,7 +13,6 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class PerfilActivity extends AppCompatActivity {
     private static final String ARQUIVO_PREFERENCIAS = "ArquivoPreferencia";
@@ -64,18 +63,20 @@ public class PerfilActivity extends AppCompatActivity {
             ImageView imgBackground = (ImageView) findViewById(R.id.imgBackground);
             ScrollView scrollContainer = (ScrollView) findViewById(R.id.scrollContainer);
             TextView textConfiguracaoGeral = (TextView) findViewById(R.id.textConfiguracaoGeral);
+            LinearLayout linearDivisao1 = (LinearLayout) findViewById(R.id.linearDivisao1);
 
             linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
             imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
             imgbtnItens.setImageResource(R.drawable.imgitens);
             imgbtnPerfil.setImageResource(R.drawable.imgperfil);
-            imgBackground.setImageResource(R.drawable.imggwen);
+            imgBackground.setImageResource(R.drawable.imggwen_fundo);
             imgBackground.setScrollX(-240);
             scrollContainer.setBackgroundResource(R.color.preto_container);
             textNickname.setTextColor(getResources().getColor(R.color.branco_texto));
             textRegiao.setTextColor(getResources().getColor(R.color.branco_texto));
             textConfiguracaoGeral.setTextColor(getResources().getColor(R.color.branco_texto));
             switchTema.setTextColor(getResources().getColor(R.color.branco_texto));
+            linearDivisao1.setBackgroundResource(R.color.branco_topocontainer);
         }
     }
 

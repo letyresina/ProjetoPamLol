@@ -88,7 +88,8 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:id="@+id/textTituloCampeao"
@@ -160,7 +161,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="18dp"
-                android:layout_marginEnd="9dp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerHorizontal="true"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -452,9 +454,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textMecanica"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="18dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="18dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/alegreya_sans_sc"
                 android:justificationMode="inter_word"
@@ -501,8 +503,8 @@
                 android:layout_below="@+id/textAnotacoes"
                 android:layout_marginTop="7dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginStart="10dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginStart="18dp"
                 android:fontFamily="@font/alegreya_sans_sc"
                 android:justificationMode="inter_word"
                 android:textColor="@color/preto_texto"

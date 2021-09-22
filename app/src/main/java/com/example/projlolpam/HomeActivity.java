@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -50,7 +49,7 @@ public class HomeActivity extends AppCompatActivity {
             imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
             imgbtnItens.setImageResource(R.drawable.imgitens);
             imgbtnPerfil.setImageResource(R.drawable.imgperfil);
-            imgBackground.setImageResource(R.drawable.imggwen);
+            imgBackground.setImageResource(R.drawable.imggwen_fundo);
             imgBackground.setScrollX(-240);
             scrollContainer.setBackgroundResource(R.color.preto_container);
             textTituloSobre.setTextColor(getResources().getColor(R.color.branco_tit_borda));

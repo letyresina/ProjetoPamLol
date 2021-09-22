@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -50,13 +51,16 @@ public class KatarinaActivity extends AppCompatActivity {
             TextView textSobre = (TextView) findViewById(R.id.textSobre);
             LinearLayout linearDivisao1 = (LinearLayout) findViewById(R.id.linearDivisao1);
             LinearLayout linearDivisao2 = (LinearLayout) findViewById(R.id.linearDivisao2);
-            LinearLayout linearDivisao3 = (LinearLayout) findViewById(R.id.linearDivisao3) ;
+            LinearLayout linearDivisao3 = (LinearLayout) findViewById(R.id.linearDivisao3);
+            LinearLayout linearDivisao4 = (LinearLayout) findViewById(R.id.linearDivisao4);
+            TextView textAnotacoes = (TextView) findViewById(R.id.textAnotacoes);
+            EditText editAnotacoes = (EditText) findViewById(R.id.textUserNotes);
 
             linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
             imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
             imgbtnItens.setImageResource(R.drawable.imgitens);
             imgbtnPerfil.setImageResource(R.drawable.imgperfil);
-            imgBackground.setImageResource(R.drawable.imggwen);
+            imgBackground.setImageResource(R.drawable.imggwen_fundo);
             imgBackground.setScrollX(-240);
             scrollContainer.setBackgroundResource(R.color.preto_container);
             textTituloCampeao.setTextColor(getResources().getColor(R.color.branco_tit_borda));
@@ -68,6 +72,10 @@ public class KatarinaActivity extends AppCompatActivity {
             linearDivisao1.setBackgroundResource(R.color.branco_topocontainer);
             linearDivisao2.setBackgroundResource(R.color.branco_topocontainer);
             linearDivisao3.setBackgroundResource(R.color.branco_topocontainer);
+            linearDivisao4.setBackgroundResource(R.color.branco_topocontainer);
+            textAnotacoes.setTextColor(getResources().getColor(R.color.branco_tit_borda));
+            editAnotacoes.setTextColor(getResources().getColor(R.color.branco_texto));
+            editAnotacoes.getBackground().mutate().setColorFilter(getResources().getColor(R.color.branco_tit_borda), PorterDuff.Mode.SRC_ATOP);
         }
 
         editAnotacoes = findViewById(R.id.textUserNotes);
