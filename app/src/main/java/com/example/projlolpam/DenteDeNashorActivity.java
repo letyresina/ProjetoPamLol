@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -50,6 +51,7 @@ public class DenteDeNashorActivity extends AppCompatActivity {
             LinearLayout linearDivisao2 = (LinearLayout) findViewById(R.id.linearDivisao2);
             TextView textAnotacoes = (TextView) findViewById(R.id.textAnotacoes);
             EditText editAnotacoes = (EditText) findViewById(R.id.textUserNotes);
+            Button buttonDeslogar = (Button) findViewById(R.id.buttonDeslogar);
 
             linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
             imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
@@ -66,6 +68,7 @@ public class DenteDeNashorActivity extends AppCompatActivity {
             textAnotacoes.setTextColor(getResources().getColor(R.color.branco_tit_borda));
             editAnotacoes.setTextColor(getResources().getColor(R.color.branco_texto));
             editAnotacoes.getBackground().mutate().setColorFilter(getResources().getColor(R.color.branco_tit_borda), PorterDuff.Mode.SRC_ATOP);
+            buttonDeslogar.setTextColor(getResources().getColor(R.color.branco_texto));
         }
 
         editAnotacoes = findViewById(R.id.textUserNotes);

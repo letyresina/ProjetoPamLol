@@ -96,7 +96,7 @@
                 android:layout_below="@+id/textNickname"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/alegreya_sans_sc"
                 android:justificationMode="inter_word"

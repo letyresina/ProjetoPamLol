@@ -21,7 +21,7 @@
     <string name="botao_home">Botão Home</string>
     <string name="botao_campeoes">Botão Campeões</string>
     <string name="botao_itens">Botão Icones</string>
-    <string name="text_olainvocador">Olá %1$s.</string>
+    <string name="text_olainvocador">Olá %1$s!</string>
 
     <string name="text_buildgeral">BUILD GERAL</string>
     <string name="text_runageral">RUNA GERAL</string>

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -64,6 +65,7 @@ public class PerfilActivity extends AppCompatActivity {
             ScrollView scrollContainer = (ScrollView) findViewById(R.id.scrollContainer);
             TextView textConfiguracaoGeral = (TextView) findViewById(R.id.textConfiguracaoGeral);
             LinearLayout linearDivisao1 = (LinearLayout) findViewById(R.id.linearDivisao1);
+            Button buttonDeslogar = (Button) findViewById(R.id.buttonDeslogar);
 
             linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
             imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
@@ -77,6 +79,7 @@ public class PerfilActivity extends AppCompatActivity {
             textConfiguracaoGeral.setTextColor(getResources().getColor(R.color.branco_texto));
             switchTema.setTextColor(getResources().getColor(R.color.branco_texto));
             linearDivisao1.setBackgroundResource(R.color.branco_topocontainer);
+            buttonDeslogar.setTextColor(getResources().getColor(R.color.branco_texto));
         }
     }
 
