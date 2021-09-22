@@ -137,13 +137,11 @@ public class MainActivity extends AppCompatActivity {
                 Manifest.permission.ACCESS_COARSE_LOCATION) !=
                 PackageManager.PERMISSION_GRANTED) {
             // Não permitido
-            Toast.makeText(getApplicationContext(), "false", Toast.LENGTH_LONG).show();
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
                     REQUEST_LOCATION_PERMISSION);
         } else {
             // Permitido
-            Toast.makeText(getApplicationContext(), "true", Toast.LENGTH_LONG).show();
             fusedLocationProviderClient.getLastLocation().addOnCompleteListener(
                     new OnCompleteListener<Location>() {
                 @Override

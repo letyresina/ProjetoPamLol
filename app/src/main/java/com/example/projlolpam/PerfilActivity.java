@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class PerfilActivity extends AppCompatActivity {
     private static final String ARQUIVO_PREFERENCIAS = "ArquivoPreferencia";
@@ -48,6 +49,10 @@ public class PerfilActivity extends AppCompatActivity {
                     editor.putBoolean("Dark", false);
                 }
                 editor.commit();
+
+                Intent intent = new Intent(PerfilActivity.this, PerfilActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -58,8 +63,6 @@ public class PerfilActivity extends AppCompatActivity {
             ImageButton imgbtnPerfil = (ImageButton) findViewById(R.id.imgbtnPerfil);
             ImageView imgBackground = (ImageView) findViewById(R.id.imgBackground);
             ScrollView scrollContainer = (ScrollView) findViewById(R.id.scrollContainer);
-            TextView textNicknameInvocador = (TextView) findViewById(R.id.textNicknameInvocador);
-            TextView textRegiaoInvocador = (TextView) findViewById(R.id.textRegiaoInvocador);
             TextView textConfiguracaoGeral = (TextView) findViewById(R.id.textConfiguracaoGeral);
 
             linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
@@ -69,11 +72,20 @@ public class PerfilActivity extends AppCompatActivity {
             imgBackground.setImageResource(R.drawable.imggwen);
             imgBackground.setScrollX(-240);
             scrollContainer.setBackgroundResource(R.color.preto_container);
-            textNicknameInvocador.setTextColor(getResources().getColor(R.color.branco_texto));
-            textRegiaoInvocador.setTextColor(getResources().getColor(R.color.branco_texto));
+            textNickname.setTextColor(getResources().getColor(R.color.branco_texto));
+            textRegiao.setTextColor(getResources().getColor(R.color.branco_texto));
             textConfiguracaoGeral.setTextColor(getResources().getColor(R.color.branco_texto));
             switchTema.setTextColor(getResources().getColor(R.color.branco_texto));
         }
+    }
+
+    public void deslogar(View view){
+        SharedPreferences preferences = getSharedPreferences(ARQUIVO_PREFERENCIAS, 0);
+        preferences.edit().clear().commit();
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     // Navegação pelas Activities
