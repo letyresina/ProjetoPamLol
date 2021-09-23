@@ -70,6 +70,19 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences preferences = getSharedPreferences(ARQUIVO_PREFERENCIAS, 0);
         if (preferences.contains("Nick") && preferences.contains("Regiao")) {
+            if (preferences.contains("tempAnotacoesKalista")) {
+                preferences.edit().remove("tempAnotacoesKalista").apply();
+            }
+            if (preferences.contains("tempAnotacoesKatarina")) {
+                preferences.edit().remove("tempAnotacoesKatarina").apply();
+            }
+            if (preferences.contains("tempAnotacoesArcoEscudoImortal")) {
+                preferences.edit().remove("tempAnotacoesArcoEscudoImortal").apply();
+            }
+            if (preferences.contains("tempAnotacoesDenteDeNashor")) {
+                preferences.edit().remove("tempAnotacoesDenteDeNashor").apply();
+            }
+
             Intent intent = new Intent(this, HomeActivity.class);
             startActivity(intent);
             finish();

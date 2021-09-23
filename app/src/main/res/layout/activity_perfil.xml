@@ -150,10 +150,24 @@
                 android:typeface="normal" />
 
             <Switch
-                android:id="@+id/switchTema"
+                android:id="@+id/switchTema2"
                 android:layout_width="211dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textConfiguracaoGeral"
+                android:layout_alignStart="@+id/textConfiguracaoGeral"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="182dp"
+                android:padding="10dp"
+                android:switchPadding="10dp"
+                android:text="@string/lighttexto2" />
+
+            <Switch
+                android:id="@+id/switchTema"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switchTema2"
                 android:layout_alignStart="@+id/textConfiguracaoGeral"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="18dp"

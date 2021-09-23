@@ -26,6 +26,7 @@ import java.io.InputStreamReader;
 public class DenteDeNashorActivity extends AppCompatActivity {
     private static final String ARQUIVO_PREFERENCIAS = "ArquivoPreferencia";
     private static final String ARQUIVO_ANOTACOES = "notesDenteDeNashor.txt";
+    private static final String KEY_ANOTACOES = "tempAnotacoesDenteDeNashor";
 
     EditText editAnotacoes;
 
@@ -73,7 +74,31 @@ public class DenteDeNashorActivity extends AppCompatActivity {
 
         editAnotacoes = findViewById(R.id.textUserNotes);
 
-        carregarAnotacoes(editAnotacoes);
+        if (preferences.contains(KEY_ANOTACOES)){
+            editAnotacoes.setText(preferences.getString(KEY_ANOTACOES, ""));
+            Toast.makeText(this, "savedinstance", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            carregarAnotacoes(editAnotacoes);
+            Toast.makeText(this, "interno", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putString(KEY_ANOTACOES, editAnotacoes.getText().toString());
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    @Override
+    protected void onPause() {
+        SharedPreferences preferences = getSharedPreferences(ARQUIVO_PREFERENCIAS, 0);
+        SharedPreferences.Editor editor = preferences.edit();
+
+        editor.putString(KEY_ANOTACOES, editAnotacoes.getText().toString());
+        editor.apply();
+
+        super.onPause();
     }
 
     public void salvarAnotacoes(View view){

@@ -143,6 +143,7 @@
     <string name="invocador_imagem">INVOCADOR</string>
     <string name="text_configuracaogeral">CONFIGURAÇÃO GERAL</string>
     <string name="lighttexto">DARK MODE</string>
+    <string name="lighttexto2">AUTOMÁTICO</string>
     <string name="text_btndeslogar">SAIR</string>
 
     <!-- ANOTAÇÕES DO USUÁRIO -->
