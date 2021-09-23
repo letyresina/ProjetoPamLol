@@ -6,3 +6,10 @@ O funcionamento do aplicativo resume ao usuário informar seu nome de usuário (
 ## v1.0:
 - Populamos os campeões: Kalista e Katarina; 
 - Populamos os itens: Arco-Escudo Imortal e Dente de NaShor.
+
+## v2.0:
+- Atribuído um Servidor ao usuário baseado ou não na localização;
+- Opção de deslogar o usuário logado;
+- Adição de anotações para cada campeão e item;
+- Implementação da opção de Dark Mode através da iluminação ambiente ou manualmente pelas configurações do app;
+- Opção de salvar as imagens dos campeões e itens na memória externa do celular.
