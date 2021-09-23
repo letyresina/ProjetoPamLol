@@ -19,7 +19,6 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class PerfilActivity extends AppCompatActivity implements SensorEventListener {
     private static final String ARQUIVO_PREFERENCIAS = "ArquivoPreferencia";
@@ -165,7 +164,7 @@ public class PerfilActivity extends AppCompatActivity implements SensorEventList
         ScrollView scrollContainer = (ScrollView) findViewById(R.id.scrollContainer);
         TextView textConfiguracaoGeral = (TextView) findViewById(R.id.textConfiguracaoGeral);
         LinearLayout linearDivisao1 = (LinearLayout) findViewById(R.id.linearDivisao1);
-        Button buttonDeslogar = (Button) findViewById(R.id.buttonDeslogar);
+        Button buttonDeslogar = (Button) findViewById(R.id.buttonSalvar);
         TextView textNickname = (TextView) findViewById(R.id.textNicknameInvocador);
         TextView textRegiao = (TextView) findViewById(R.id.textRegiaoInvocador);
         Switch switchTema = (Switch) findViewById(R.id.switchTema);

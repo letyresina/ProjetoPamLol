@@ -45,10 +45,6 @@ public class CampeoesActivity extends AppCompatActivity implements SensorEventLi
 
         sensorManager = (SensorManager) getSystemService(Service.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
-
-        if (preferences.getBoolean("Dark", false)) {
-           ativarDarkMode();
-        }
     }
 
     public void abrirKalistaActivity(View view) {
@@ -142,19 +138,6 @@ public class CampeoesActivity extends AppCompatActivity implements SensorEventLi
         ImageButton imgbtnPerfil = (ImageButton) findViewById(R.id.imgbtnPerfil);
         ImageView imgBackground = (ImageView) findViewById(R.id.imgBackground);
         ScrollView scrollContainer = (ScrollView) findViewById(R.id.scrollContainer);
-        TextView textTituloCampeao = (TextView) findViewById(R.id.textTituloCampeao);
-        TextView textFraseCampeao = (TextView) findViewById(R.id.textFraseCampeao);
-        TextView textBuildGeral = (TextView) findViewById(R.id.textBuildGeral);
-        TextView textRunaGeral = (TextView) findViewById(R.id.textRunaGeral);
-        TextView textMecanica = (TextView) findViewById(R.id.textMecanica);
-        TextView textSobre = (TextView) findViewById(R.id.textSobre);
-        LinearLayout linearDivisao1 = (LinearLayout) findViewById(R.id.linearDivisao1);
-        LinearLayout linearDivisao2 = (LinearLayout) findViewById(R.id.linearDivisao2);
-        LinearLayout linearDivisao3 = (LinearLayout) findViewById(R.id.linearDivisao3);
-        LinearLayout linearDivisao4 = (LinearLayout) findViewById(R.id.linearDivisao4);
-        TextView textAnotacoes = (TextView) findViewById(R.id.textAnotacoes);
-        EditText editAnotacoes = (EditText) findViewById(R.id.textUserNotes);
-        Button buttonDeslogar = (Button) findViewById(R.id.buttonDeslogar);
 
         linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
         imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
@@ -163,19 +146,5 @@ public class CampeoesActivity extends AppCompatActivity implements SensorEventLi
         imgBackground.setImageResource(R.drawable.imggwen_fundo);
         imgBackground.setScrollX(-240);
         scrollContainer.setBackgroundResource(R.color.preto_container);
-        textTituloCampeao.setTextColor(getResources().getColor(R.color.branco_tit_borda));
-        textFraseCampeao.setTextColor(getResources().getColor(R.color.branco_texto));
-        textBuildGeral.setTextColor(getResources().getColor(R.color.branco_texto));
-        textRunaGeral.setTextColor(getResources().getColor(R.color.branco_tit_borda));
-        textMecanica.setTextColor(getResources().getColor(R.color.branco_tit_borda));
-        textSobre.setTextColor(getResources().getColor(R.color.branco_texto));
-        linearDivisao1.setBackgroundResource(R.color.branco_topocontainer);
-        linearDivisao2.setBackgroundResource(R.color.branco_topocontainer);
-        linearDivisao3.setBackgroundResource(R.color.branco_topocontainer);
-        linearDivisao4.setBackgroundResource(R.color.branco_topocontainer);
-        textAnotacoes.setTextColor(getResources().getColor(R.color.branco_tit_borda));
-        editAnotacoes.setTextColor(getResources().getColor(R.color.branco_texto));
-        editAnotacoes.getBackground().mutate().setColorFilter(getResources().getColor(R.color.branco_tit_borda), PorterDuff.Mode.SRC_ATOP);
-        buttonDeslogar.setTextColor(getResources().getColor(R.color.branco_texto));
     }
 }

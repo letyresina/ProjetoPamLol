@@ -52,7 +52,7 @@ public class ArcoEscudoImortalActivity extends AppCompatActivity {
             LinearLayout linearDivisao2 = (LinearLayout) findViewById(R.id.linearDivisao2);
             TextView textAnotacoes = (TextView) findViewById(R.id.textAnotacoes);
             EditText editAnotacoes = (EditText) findViewById(R.id.textUserNotes);
-            Button buttonDeslogar = (Button) findViewById(R.id.buttonDeslogar);
+            Button buttonSalvar = (Button) findViewById(R.id.buttonSalvar);
 
             linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
             imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
@@ -69,7 +69,7 @@ public class ArcoEscudoImortalActivity extends AppCompatActivity {
             textAnotacoes.setTextColor(getResources().getColor(R.color.branco_tit_borda));
             editAnotacoes.setTextColor(getResources().getColor(R.color.branco_texto));
             editAnotacoes.getBackground().mutate().setColorFilter(getResources().getColor(R.color.branco_tit_borda), PorterDuff.Mode.SRC_ATOP);
-            buttonDeslogar.setTextColor(getResources().getColor(R.color.branco_texto));
+            buttonSalvar.setTextColor(getResources().getColor(R.color.branco_texto));
         }
 
         editAnotacoes = findViewById(R.id.textUserNotes);

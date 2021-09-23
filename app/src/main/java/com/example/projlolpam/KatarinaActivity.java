@@ -58,9 +58,6 @@ public class KatarinaActivity extends AppCompatActivity implements SensorEventLi
         sensorManager = (SensorManager) getSystemService(Service.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
-        if (preferences.getBoolean("Dark", false)) {
-            ativarDarkMode();
-        }
 
         editAnotacoes = findViewById(R.id.textUserNotes);
 
@@ -232,7 +229,7 @@ public class KatarinaActivity extends AppCompatActivity implements SensorEventLi
         LinearLayout linearDivisao4 = (LinearLayout) findViewById(R.id.linearDivisao4);
         TextView textAnotacoes = (TextView) findViewById(R.id.textAnotacoes);
         EditText editAnotacoes = (EditText) findViewById(R.id.textUserNotes);
-        Button buttonDeslogar = (Button) findViewById(R.id.buttonDeslogar);
+        Button buttonSalvar = (Button) findViewById(R.id.buttonSalvar);
 
         linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
         imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
@@ -254,6 +251,6 @@ public class KatarinaActivity extends AppCompatActivity implements SensorEventLi
         textAnotacoes.setTextColor(getResources().getColor(R.color.branco_tit_borda));
         editAnotacoes.setTextColor(getResources().getColor(R.color.branco_texto));
         editAnotacoes.getBackground().mutate().setColorFilter(getResources().getColor(R.color.branco_tit_borda), PorterDuff.Mode.SRC_ATOP);
-        buttonDeslogar.setTextColor(getResources().getColor(R.color.branco_texto));
+        buttonSalvar.setTextColor(getResources().getColor(R.color.branco_texto));
     }
 }

@@ -5,15 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Service;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.PorterDuff;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -56,10 +53,6 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
         // Insere o texto
         TextView textView = (TextView) findViewById(R.id.textNickname);
         textView.setText(getString(R.string.text_olainvocador, nickname));
-
-        if (preferences.getBoolean("Dark", false)){
-            ativarDarkMode();
-        }
     }
     public void abrirPorofessor(View view)
     {
@@ -174,19 +167,9 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
         ImageButton imgbtnPerfil = (ImageButton) findViewById(R.id.imgbtnPerfil);
         ImageView imgBackground = (ImageView) findViewById(R.id.imgBackground);
         ScrollView scrollContainer = (ScrollView) findViewById(R.id.scrollContainer);
-        TextView textTituloCampeao = (TextView) findViewById(R.id.textTituloCampeao);
-        TextView textFraseCampeao = (TextView) findViewById(R.id.textFraseCampeao);
-        TextView textBuildGeral = (TextView) findViewById(R.id.textBuildGeral);
-        TextView textRunaGeral = (TextView) findViewById(R.id.textRunaGeral);
-        TextView textMecanica = (TextView) findViewById(R.id.textMecanica);
+        TextView textTituloSobre = (TextView) findViewById(R.id.textTituloSobre);
+        TextView textNickname = (TextView) findViewById(R.id.textNickname);
         TextView textSobre = (TextView) findViewById(R.id.textSobre);
-        LinearLayout linearDivisao1 = (LinearLayout) findViewById(R.id.linearDivisao1);
-        LinearLayout linearDivisao2 = (LinearLayout) findViewById(R.id.linearDivisao2);
-        LinearLayout linearDivisao3 = (LinearLayout) findViewById(R.id.linearDivisao3);
-        LinearLayout linearDivisao4 = (LinearLayout) findViewById(R.id.linearDivisao4);
-        TextView textAnotacoes = (TextView) findViewById(R.id.textAnotacoes);
-        EditText editAnotacoes = (EditText) findViewById(R.id.textUserNotes);
-        Button buttonDeslogar = (Button) findViewById(R.id.buttonDeslogar);
 
         linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
         imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
@@ -195,19 +178,8 @@ public class HomeActivity extends AppCompatActivity implements SensorEventListen
         imgBackground.setImageResource(R.drawable.imggwen_fundo);
         imgBackground.setScrollX(-240);
         scrollContainer.setBackgroundResource(R.color.preto_container);
-        textTituloCampeao.setTextColor(getResources().getColor(R.color.branco_tit_borda));
-        textFraseCampeao.setTextColor(getResources().getColor(R.color.branco_texto));
-        textBuildGeral.setTextColor(getResources().getColor(R.color.branco_texto));
-        textRunaGeral.setTextColor(getResources().getColor(R.color.branco_tit_borda));
-        textMecanica.setTextColor(getResources().getColor(R.color.branco_tit_borda));
+        textTituloSobre.setTextColor(getResources().getColor(R.color.branco_tit_borda));
+        textNickname.setTextColor(getResources().getColor(R.color.branco_texto));
         textSobre.setTextColor(getResources().getColor(R.color.branco_texto));
-        linearDivisao1.setBackgroundResource(R.color.branco_topocontainer);
-        linearDivisao2.setBackgroundResource(R.color.branco_topocontainer);
-        linearDivisao3.setBackgroundResource(R.color.branco_topocontainer);
-        linearDivisao4.setBackgroundResource(R.color.branco_topocontainer);
-        textAnotacoes.setTextColor(getResources().getColor(R.color.branco_tit_borda));
-        editAnotacoes.setTextColor(getResources().getColor(R.color.branco_texto));
-        editAnotacoes.getBackground().mutate().setColorFilter(getResources().getColor(R.color.branco_tit_borda), PorterDuff.Mode.SRC_ATOP);
-        buttonDeslogar.setTextColor(getResources().getColor(R.color.branco_texto));
     }
 }
