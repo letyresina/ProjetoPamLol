@@ -47,45 +47,6 @@ public class CampeoesActivity extends AppCompatActivity implements SensorEventLi
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
     }
 
-    public void abrirKalistaActivity(View view) {
-        Intent intent = new Intent(this, KalistaActivity.class);
-        startActivity(intent);
-    }
-
-    public void abrirKatarinaActivity(View view) {
-        Intent intent = new Intent(this, KatarinaActivity.class);
-        startActivity(intent);
-    }
-
-    // Navegação pelas Activities
-
-    public void abrirHomeActivity(View view) {
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
-        this.overridePendingTransition(0, 0);
-        finish();
-    }
-
-    public void abrirCampeoesActivity(View view) {
-        Intent intent = new Intent(this, CampeoesActivity.class);
-        startActivity(intent);
-        this.overridePendingTransition(0, 0);
-        finish();
-    }
-
-    public void abrirItensActivity(View view) {
-        Intent intent = new Intent(this, ItensActivity.class);
-        startActivity(intent);
-        this.overridePendingTransition(0, 0);
-        finish();
-    }
-
-    public void abrirPerfilActivity(View view) {
-        Intent intent = new Intent(this, PerfilActivity.class);
-        startActivity(intent);
-        finish();
-    }
-
     @Override
     protected void onPause() {
         super.onPause();
@@ -131,7 +92,7 @@ public class CampeoesActivity extends AppCompatActivity implements SensorEventLi
 
     }
 
-    public void ativarDarkMode(){
+    public void ativarDarkMode() {
         LinearLayout linearCabecalho = (LinearLayout) findViewById(R.id.linearCabecalho);
         ImageButton imgbtnCampeoes = (ImageButton) findViewById(R.id.imgbtnCampeoes);
         ImageButton imgbtnItens = (ImageButton) findViewById(R.id.imgbtnItens);
@@ -146,5 +107,44 @@ public class CampeoesActivity extends AppCompatActivity implements SensorEventLi
         imgBackground.setImageResource(R.drawable.imggwen_fundo);
         imgBackground.setScrollX(-240);
         scrollContainer.setBackgroundResource(R.color.preto_container);
+    }
+
+    // Navegação pelas Activities
+
+    public void abrirHomeActivity(View view) {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
+    }
+
+    public void abrirCampeoesActivity(View view) {
+        Intent intent = new Intent(this, CampeoesActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
+    }
+
+    public void abrirItensActivity(View view) {
+        Intent intent = new Intent(this, ItensActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
+    }
+
+    public void abrirPerfilActivity(View view) {
+        Intent intent = new Intent(this, PerfilActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void abrirKalistaActivity(View view) {
+        Intent intent = new Intent(this, KalistaActivity.class);
+        startActivity(intent);
+    }
+
+    public void abrirKatarinaActivity(View view) {
+        Intent intent = new Intent(this, KatarinaActivity.class);
+        startActivity(intent);
     }
 }

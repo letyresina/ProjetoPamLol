@@ -89,6 +89,12 @@ public class ArcoEscudoImortalActivity extends AppCompatActivity implements Sens
         super.onPause();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
     public void salvarAnotacoes(View view){
         String anotacoes = editAnotacoes.getText().toString();
         FileOutputStream fileOutputStream = null;
@@ -139,41 +145,6 @@ public class ArcoEscudoImortalActivity extends AppCompatActivity implements Sens
                 }
             }
         }
-    }
-
-    // Navegação pelas Activities
-
-    public void abrirHomeActivity(View view) {
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
-        this.overridePendingTransition(0, 0);
-        finish();
-    }
-
-    public void abrirCampeoesActivity(View view) {
-        Intent intent = new Intent(this, CampeoesActivity.class);
-        startActivity(intent);
-        this.overridePendingTransition(0, 0);
-        finish();
-    }
-
-    public void abrirItensActivity(View view) {
-        Intent intent = new Intent(this, ItensActivity.class);
-        startActivity(intent);
-        this.overridePendingTransition(0, 0);
-        finish();
-    }
-
-    public void abrirPerfilActivity(View view) {
-        Intent intent = new Intent(this, PerfilActivity.class);
-        startActivity(intent);
-        finish();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     @Override
@@ -241,5 +212,34 @@ public class ArcoEscudoImortalActivity extends AppCompatActivity implements Sens
         editAnotacoes.setTextColor(getResources().getColor(R.color.branco_texto));
         editAnotacoes.getBackground().mutate().setColorFilter(getResources().getColor(R.color.branco_tit_borda), PorterDuff.Mode.SRC_ATOP);
         buttonSalvar.setTextColor(getResources().getColor(R.color.branco_texto));
+    }
+
+    // Navegação pelas Activities
+
+    public void abrirHomeActivity(View view) {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
+    }
+
+    public void abrirCampeoesActivity(View view) {
+        Intent intent = new Intent(this, CampeoesActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
+    }
+
+    public void abrirItensActivity(View view) {
+        Intent intent = new Intent(this, ItensActivity.class);
+        startActivity(intent);
+        this.overridePendingTransition(0, 0);
+        finish();
+    }
+
+    public void abrirPerfilActivity(View view) {
+        Intent intent = new Intent(this, PerfilActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
