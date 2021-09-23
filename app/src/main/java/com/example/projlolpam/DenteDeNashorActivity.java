@@ -1,16 +1,21 @@
 package com.example.projlolpam;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.app.Service;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.graphics.PorterDuff;
+import android.graphics.drawable.BitmapDrawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,6 +27,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -33,11 +39,14 @@ public class DenteDeNashorActivity extends AppCompatActivity implements SensorEv
     private static final String ARQUIVO_ANOTACOES = "notesDenteDeNashor.txt";
     private static final String KEY_ANOTACOES = "tempAnotacoesDenteDeNashor";
 
+    private int EXTERNAL_STORAGE_PERMISSION_CODE = 23;
+
     SensorManager sensorManager;
     Sensor sensor;
     Float luminosidade;
 
     EditText editAnotacoes;
+    ImageView imgDenteDeNashor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -178,6 +187,47 @@ public class DenteDeNashorActivity extends AppCompatActivity implements SensorEv
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
+    }
+
+    // Armazenamento externo
+
+    public void salvarImgExterno(View view){
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                EXTERNAL_STORAGE_PERMISSION_CODE);
+
+        File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+
+        imgDenteDeNashor = (ImageView) findViewById(R.id.imageItem);
+
+        BitmapDrawable drawable = (BitmapDrawable) imgDenteDeNashor.getDrawable();
+        Bitmap bitmap = drawable.getBitmap();
+
+        File file = new File(folder, "imgDenteDeNashor.png");
+        writeImageData(file, bitmap);
+    }
+
+    private void writeImageData(File file, Bitmap image) {
+        if (!file.exists()){
+            FileOutputStream fileOutputStream = null;
+            try {
+                fileOutputStream = new FileOutputStream(file);
+                image.compress(Bitmap.CompressFormat.PNG, 100, fileOutputStream);
+                fileOutputStream.flush();
+                Toast.makeText(this, "Salvo " + file.getAbsolutePath(), Toast.LENGTH_SHORT).show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                if (fileOutputStream != null) {
+                    try {
+                        fileOutputStream.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        } else {
+            Toast.makeText(this, "Imagem já salva no dispositivo.", Toast.LENGTH_LONG).show();
+        }
     }
 
     public void ativarDarkMode(){

@@ -80,8 +80,6 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
             carregarAnotacoes(editAnotacoes);
             Toast.makeText(this, "interno", Toast.LENGTH_SHORT).show();
         }
-
-        salvarImgExterno();
     }
 
     @Override
@@ -239,6 +237,47 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
         buttonSalvar.setTextColor(getResources().getColor(R.color.branco_texto));
     }
 
+    // Armazenamento externo
+
+    public void salvarImgExterno(View view){
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                EXTERNAL_STORAGE_PERMISSION_CODE);
+
+        File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+
+        imgKalista = (ImageView) findViewById(R.id.imageCampeao);
+
+        BitmapDrawable drawable = (BitmapDrawable) imgKalista.getDrawable();
+        Bitmap bitmap = drawable.getBitmap();
+
+        File file = new File(folder, "imgKalista.png");
+        writeImageData(file, bitmap);
+    }
+
+    private void writeImageData(File file, Bitmap image) {
+        if (!file.exists()){
+            FileOutputStream fileOutputStream = null;
+            try {
+                fileOutputStream = new FileOutputStream(file);
+                image.compress(Bitmap.CompressFormat.PNG, 100, fileOutputStream);
+                fileOutputStream.flush();
+                Toast.makeText(this, "Salvo " + file.getAbsolutePath(), Toast.LENGTH_SHORT).show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                if (fileOutputStream != null) {
+                    try {
+                        fileOutputStream.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        } else {
+            Toast.makeText(this, "Imagem já salva no dispositivo.", Toast.LENGTH_LONG).show();
+        }
+    }
+
     // Navegação pelas Activities
 
     public void abrirHomeActivity(View view) {
@@ -266,42 +305,6 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
         Intent intent = new Intent(this, PerfilActivity.class);
         startActivity(intent);
         finish();
-    }
-
-    // Armazenamento externo
-
-    public void salvarImgExterno(){
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                EXTERNAL_STORAGE_PERMISSION_CODE);
-
-        File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-
-        BitmapDrawable drawable = (BitmapDrawable) imgKalista.getDrawable();
-        Bitmap bitmapKalista = drawable.getBitmap();
-
-        File file = new File(folder, "imgKalista.png");
-        writeImageData(file, bitmapKalista);
-    }
-
-    private void writeImageData(File file, Bitmap image) {
-
-        FileOutputStream fileOutputStream = null;
-        try {
-            fileOutputStream = new FileOutputStream(file);
-            image.compress(Bitmap.CompressFormat.PNG, 100, fileOutputStream);
-            fileOutputStream.flush();
-            Toast.makeText(this, "Done" + file.getAbsolutePath(), Toast.LENGTH_SHORT).show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            if (fileOutputStream != null) {
-                try {
-                    fileOutputStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
     }
 }
 
