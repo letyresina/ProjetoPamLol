@@ -2,9 +2,14 @@ package com.example.projlolpam;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Service;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,10 +28,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class DenteDeNashorActivity extends AppCompatActivity {
+public class DenteDeNashorActivity extends AppCompatActivity implements SensorEventListener {
     private static final String ARQUIVO_PREFERENCIAS = "ArquivoPreferencia";
     private static final String ARQUIVO_ANOTACOES = "notesDenteDeNashor.txt";
     private static final String KEY_ANOTACOES = "tempAnotacoesDenteDeNashor";
+
+    SensorManager sensorManager;
+    Sensor sensor;
+    Float luminosidade;
 
     EditText editAnotacoes;
 
@@ -38,39 +47,16 @@ public class DenteDeNashorActivity extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences(ARQUIVO_PREFERENCIAS, 0);
         SharedPreferences.Editor editor = preferences.edit();
 
-        if (preferences.getBoolean("Dark", false)) {
-            LinearLayout linearCabecalho = (LinearLayout) findViewById(R.id.linearCabecalho);
-            ImageButton imgbtnCampeoes = (ImageButton) findViewById(R.id.imgbtnCampeoes);
-            ImageButton imgbtnItens = (ImageButton) findViewById(R.id.imgbtnItens);
-            ImageButton imgbtnPerfil = (ImageButton) findViewById(R.id.imgbtnPerfil);
-            ImageView imgBackground = (ImageView) findViewById(R.id.imgBackground);
-            ScrollView scrollContainer = (ScrollView) findViewById(R.id.scrollContainer);
-            TextView textTituloItem = (TextView) findViewById(R.id.textTituloItem);
-            TextView textSobre = (TextView) findViewById(R.id.textSobre);
-            TextView textCampeoesRecomendados = (TextView) findViewById(R.id.textCampeoesRecomendados);
-            LinearLayout linearDivisao1 = (LinearLayout) findViewById(R.id.linearDivisao1);
-            LinearLayout linearDivisao2 = (LinearLayout) findViewById(R.id.linearDivisao2);
-            TextView textAnotacoes = (TextView) findViewById(R.id.textAnotacoes);
-            EditText editAnotacoes = (EditText) findViewById(R.id.textUserNotes);
-            Button buttonSalvar = (Button) findViewById(R.id.buttonSalvar);
-
-            linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
-            imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
-            imgbtnItens.setImageResource(R.drawable.imgitens);
-            imgbtnPerfil.setImageResource(R.drawable.imgperfil);
-            imgBackground.setImageResource(R.drawable.imggwen_fundo);
-            imgBackground.setScrollX(-240);
-            scrollContainer.setBackgroundResource(R.color.preto_container);
-            textTituloItem.setTextColor(getResources().getColor(R.color.branco_tit_borda));
-            textSobre.setTextColor(getResources().getColor(R.color.branco_texto));
-            textCampeoesRecomendados.setTextColor(getResources().getColor(R.color.branco_tit_borda));
-            linearDivisao1.setBackgroundResource(R.color.branco_topocontainer);
-            linearDivisao2.setBackgroundResource(R.color.branco_topocontainer);
-            textAnotacoes.setTextColor(getResources().getColor(R.color.branco_tit_borda));
-            editAnotacoes.setTextColor(getResources().getColor(R.color.branco_texto));
-            editAnotacoes.getBackground().mutate().setColorFilter(getResources().getColor(R.color.branco_tit_borda), PorterDuff.Mode.SRC_ATOP);
-            buttonSalvar.setTextColor(getResources().getColor(R.color.branco_texto));
+        if (preferences.getBoolean("Automatico", false)) {
+            if (preferences.getBoolean("Dark", false)){
+                ativarDarkMode();
+            }
+        } else if (preferences.getBoolean("Dark", false)) {
+            ativarDarkMode();
         }
+
+        sensorManager = (SensorManager) getSystemService(Service.SENSOR_SERVICE);
+        sensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
         editAnotacoes = findViewById(R.id.textUserNotes);
 
@@ -97,6 +83,8 @@ public class DenteDeNashorActivity extends AppCompatActivity {
 
         editor.putString(KEY_ANOTACOES, editAnotacoes.getText().toString());
         editor.apply();
+
+        sensorManager.unregisterListener(this);
 
         super.onPause();
     }
@@ -180,5 +168,78 @@ public class DenteDeNashorActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PerfilActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        SharedPreferences preferences = getSharedPreferences(ARQUIVO_PREFERENCIAS, 0);
+        SharedPreferences.Editor editor = preferences.edit();
+
+        if (preferences.getBoolean("Automatico", false)) {
+            if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
+                luminosidade = event.values[0];
+
+                if (preferences.getBoolean("Automatico", false) && luminosidade < 20000) {
+                    editor.putBoolean("Dark", true).apply();
+
+                    Intent intent = new Intent(DenteDeNashorActivity.this, DenteDeNashorActivity.class);
+                    startActivity(intent);
+                    this.overridePendingTransition(0, 0);
+                    finish();
+                } else if (preferences.getBoolean("Automatico", false) && luminosidade >= 20000) {
+                    editor.putBoolean("Dark", false).apply();
+
+                    Intent intent = new Intent(DenteDeNashorActivity.this, DenteDeNashorActivity.class);
+                    startActivity(intent);
+                    this.overridePendingTransition(0, 0);
+                    finish();
+                }
+            }
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
+
+    public void ativarDarkMode(){
+        LinearLayout linearCabecalho = (LinearLayout) findViewById(R.id.linearCabecalho);
+        ImageButton imgbtnCampeoes = (ImageButton) findViewById(R.id.imgbtnCampeoes);
+        ImageButton imgbtnItens = (ImageButton) findViewById(R.id.imgbtnItens);
+        ImageButton imgbtnPerfil = (ImageButton) findViewById(R.id.imgbtnPerfil);
+        ImageView imgBackground = (ImageView) findViewById(R.id.imgBackground);
+        ScrollView scrollContainer = (ScrollView) findViewById(R.id.scrollContainer);
+        TextView textTituloItem = (TextView) findViewById(R.id.textTituloItem);
+        TextView textSobre = (TextView) findViewById(R.id.textSobre);
+        TextView textCampeoesRecomendados = (TextView) findViewById(R.id.textCampeoesRecomendados);
+        LinearLayout linearDivisao1 = (LinearLayout) findViewById(R.id.linearDivisao1);
+        LinearLayout linearDivisao2 = (LinearLayout) findViewById(R.id.linearDivisao2);
+        TextView textAnotacoes = (TextView) findViewById(R.id.textAnotacoes);
+        EditText editAnotacoes = (EditText) findViewById(R.id.textUserNotes);
+        Button buttonSalvar = (Button) findViewById(R.id.buttonSalvar);
+
+        linearCabecalho.setBackgroundResource(R.color.preto_cabecalho);
+        imgbtnCampeoes.setImageResource(R.drawable.imgcampeoes);
+        imgbtnItens.setImageResource(R.drawable.imgitens);
+        imgbtnPerfil.setImageResource(R.drawable.imgperfil);
+        imgBackground.setImageResource(R.drawable.imggwen_fundo);
+        imgBackground.setScrollX(-240);
+        scrollContainer.setBackgroundResource(R.color.preto_container);
+        textTituloItem.setTextColor(getResources().getColor(R.color.branco_tit_borda));
+        textSobre.setTextColor(getResources().getColor(R.color.branco_texto));
+        textCampeoesRecomendados.setTextColor(getResources().getColor(R.color.branco_tit_borda));
+        linearDivisao1.setBackgroundResource(R.color.branco_topocontainer);
+        linearDivisao2.setBackgroundResource(R.color.branco_topocontainer);
+        textAnotacoes.setTextColor(getResources().getColor(R.color.branco_tit_borda));
+        editAnotacoes.setTextColor(getResources().getColor(R.color.branco_texto));
+        editAnotacoes.getBackground().mutate().setColorFilter(getResources().getColor(R.color.branco_tit_borda), PorterDuff.Mode.SRC_ATOP);
+        buttonSalvar.setTextColor(getResources().getColor(R.color.branco_texto));
     }
 }

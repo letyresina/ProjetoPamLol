@@ -58,7 +58,6 @@ public class KatarinaActivity extends AppCompatActivity implements SensorEventLi
         sensorManager = (SensorManager) getSystemService(Service.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
-
         editAnotacoes = findViewById(R.id.textUserNotes);
 
         if (preferences.contains(KEY_ANOTACOES)){
