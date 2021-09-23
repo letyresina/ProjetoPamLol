@@ -71,11 +71,9 @@ public class ArcoEscudoImortalActivity extends AppCompatActivity implements Sens
 
         if (preferences.contains(KEY_ANOTACOES)){
             editAnotacoes.setText(preferences.getString(KEY_ANOTACOES, ""));
-            Toast.makeText(this, "savedinstance", Toast.LENGTH_SHORT).show();
         }
         else{
             carregarAnotacoes(editAnotacoes);
-            Toast.makeText(this, "interno", Toast.LENGTH_SHORT).show();
         }
     }
 
