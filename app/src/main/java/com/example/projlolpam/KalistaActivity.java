@@ -1,16 +1,25 @@
 package com.example.projlolpam;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.app.Service;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.PorterDuff;
+import android.graphics.drawable.BitmapDrawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaScannerConnection;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,6 +31,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -33,11 +43,14 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
     private static final String ARQUIVO_ANOTACOES = "notesKalista.txt";
     private static final String KEY_ANOTACOES = "tempAnotacoesKalista";
 
+    private int EXTERNAL_STORAGE_PERMISSION_CODE = 23;
+
     SensorManager sensorManager;
     Sensor sensor;
     Float luminosidade;
 
     EditText editAnotacoes;
+    ImageView imgKalista;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +61,7 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
         SharedPreferences.Editor editor = preferences.edit();
 
         if (preferences.getBoolean("Automatico", false)) {
-            if (preferences.getBoolean("Dark", false)){
+            if (preferences.getBoolean("Dark", false)) {
                 ativarDarkMode();
             }
         } else if (preferences.getBoolean("Dark", false)) {
@@ -60,14 +73,15 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
 
         editAnotacoes = findViewById(R.id.textUserNotes);
 
-        if (preferences.contains(KEY_ANOTACOES)){
+        if (preferences.contains(KEY_ANOTACOES)) {
             editAnotacoes.setText(preferences.getString(KEY_ANOTACOES, ""));
             Toast.makeText(this, "savedinstance", Toast.LENGTH_SHORT).show();
-        }
-        else{
+        } else {
             carregarAnotacoes(editAnotacoes);
             Toast.makeText(this, "interno", Toast.LENGTH_SHORT).show();
         }
+
+        salvarImgExterno();
     }
 
     @Override
@@ -95,7 +109,7 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
         sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
-    public void salvarAnotacoes(View view){
+    public void salvarAnotacoes(View view) {
         String anotacoes = editAnotacoes.getText().toString();
         FileOutputStream fileOutputStream = null;
 
@@ -108,7 +122,7 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if (fileOutputStream != null){
+            if (fileOutputStream != null) {
                 try {
                     fileOutputStream.close();
                 } catch (IOException e) {
@@ -118,7 +132,7 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
         }
     }
 
-    public void carregarAnotacoes(View view){
+    public void carregarAnotacoes(View view) {
         FileInputStream fileInputStream = null;
 
         try {
@@ -128,7 +142,7 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
             StringBuilder stringBuilder = new StringBuilder();
             String anotacoes;
 
-            while ((anotacoes = bufferedReader.readLine()) != null){
+            while ((anotacoes = bufferedReader.readLine()) != null) {
                 stringBuilder.append(anotacoes).append("\n");
             }
 
@@ -138,7 +152,7 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if (fileInputStream != null){
+            if (fileInputStream != null) {
                 try {
                     fileInputStream.close();
                 } catch (IOException e) {
@@ -181,7 +195,7 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
 
     }
 
-    public void ativarDarkMode(){
+    public void ativarDarkMode() {
         LinearLayout linearCabecalho = (LinearLayout) findViewById(R.id.linearCabecalho);
         ImageButton imgbtnCampeoes = (ImageButton) findViewById(R.id.imgbtnCampeoes);
         ImageButton imgbtnItens = (ImageButton) findViewById(R.id.imgbtnItens);
@@ -253,4 +267,41 @@ public class KalistaActivity extends AppCompatActivity implements SensorEventLis
         startActivity(intent);
         finish();
     }
+
+    // Armazenamento externo
+
+    public void salvarImgExterno(){
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                EXTERNAL_STORAGE_PERMISSION_CODE);
+
+        File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+
+        BitmapDrawable drawable = (BitmapDrawable) imgKalista.getDrawable();
+        Bitmap bitmapKalista = drawable.getBitmap();
+
+        File file = new File(folder, "imgKalista.png");
+        writeImageData(file, bitmapKalista);
+    }
+
+    private void writeImageData(File file, Bitmap image) {
+
+        FileOutputStream fileOutputStream = null;
+        try {
+            fileOutputStream = new FileOutputStream(file);
+            image.compress(Bitmap.CompressFormat.PNG, 100, fileOutputStream);
+            fileOutputStream.flush();
+            Toast.makeText(this, "Done" + file.getAbsolutePath(), Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (fileOutputStream != null) {
+                try {
+                    fileOutputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 }
+
